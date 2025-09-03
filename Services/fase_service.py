@@ -24,7 +24,7 @@ def verificar_e_avancar_fase(estufa_id):
         forcar = config.get("ForcarAvancoFase", False)
 
         if fase == "Standby" or planta == "Standby":
-            print("🛑 Estufa em Standby — Avanço de fase desabilitado.")
+            print("Estufa em Standby — Avanço de fase desabilitado.")
             return
         if not planta or not fase or not inicio_ts: return
 

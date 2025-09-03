@@ -42,7 +42,7 @@ class Aquecedor:
 
         if temperatura_ar is None:
             self.desligar()
-            return False, "⚠️ Temperatura inválida"
+            return False, "Temperatura inválida"
 
         temp_desejada = config.get("TemperaturaDesejada")
         temp_min = config.get("TemperaturaMin", 0)
@@ -52,19 +52,19 @@ class Aquecedor:
         if temp_desejada is not None:
             if temperatura_ar < temp_desejada:
                 self.ligar()
-                return True, f"⚠️ {temperatura_ar}°C < desejada ({temp_desejada}°C)"
+                return True, f"{temperatura_ar}°C < desejada ({temp_desejada}°C)"
             else:
                 self.desligar()
-                return False, f"✅ {temperatura_ar}°C ≥ desejada ({temp_desejada}°C)"
+                return False, f"{temperatura_ar}°C ≥ desejada ({temp_desejada}°C)"
 
         # 🔧 Controle com base nos limites do preset
         if temperatura_ar < temp_min:
             self.ligar()
-            return True, f"⚠️ {temperatura_ar}°C < mínima ({temp_min}°C)"
+            return True, f"{temperatura_ar}°C < mínima ({temp_min}°C)"
 
         if temperatura_ar >= temp_max:
             self.desligar()
-            return False, f"🚨 {temperatura_ar}°C ≥ máxima ({temp_max}°C)"
+            return False, f"{temperatura_ar}°C ≥ máxima ({temp_max}°C)"
 
         self.desligar()
-        return False, f"✅ {temperatura_ar}°C entre {temp_min}°C e {temp_max}°C"
+        return False, f"{temperatura_ar}°C entre {temp_min}°C e {temp_max}°C"

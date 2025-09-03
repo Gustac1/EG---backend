@@ -32,11 +32,12 @@ class Ventoinha:
         # 🔥 1. Aquecedor tem prioridade
         if aquecedor_ativo:
             self.ligar()
-            return True, "🟡 Ligada junto com o aquecedor"
+            return True, "Ligada junto com o aquecedor"
 
         # ⚠️ 2. Validação
         if temperatura_ar is None or umidade_ar is None:
-            return False, "⚠️ Leitura inválida de sensores"
+            self.desligar()
+            return False, "Leitura inválida de sensores"
 
         # 🧪 3. Override de umidade — aplica lógica exclusiva
         if config.get("OverrideUmidade", False):
@@ -44,10 +45,10 @@ class Ventoinha:
             if umi_desejada is not None:
                 if umidade_ar > umi_desejada:
                     self.ligar()
-                    return True, f"⚠️ Override: Umidade {umidade_ar}% > desejada ({umi_desejada}%)"
+                    return True, f"Override: Umidade {umidade_ar}% > desejada ({umi_desejada}%)"
                 else:
                     self.desligar()
-                    return False, f"✅ Override: Umidade abaixo do limite ({umidade_ar}% ≤ desejada {umi_desejada}%)"
+                    return False, f"Override: Umidade abaixo do limite ({umidade_ar}% ≤ desejada {umi_desejada}%)"
 
         # 🔧 4. Lógica com base nos presets
         temp_desejada = config.get("TemperaturaDesejada")
@@ -56,16 +57,16 @@ class Ventoinha:
 
         if temp_desejada is not None and temperatura_ar > temp_desejada:
             self.ligar()
-            return True, f"⚠️ Temperatura {temperatura_ar}°C > desejada ({temp_desejada}°C)"
+            return True, f"Temperatura {temperatura_ar}°C > desejada ({temp_desejada}°C)"
 
         if temperatura_ar >= temp_max:
             self.ligar()
-            return True, f"🚨 Temperatura {temperatura_ar}°C ≥ limite ({temp_max}°C)"
+            return True, f"Temperatura {temperatura_ar}°C ≥ limite ({temp_max}°C)"
 
         if umidade_ar >= umi_max:
             self.ligar()
-            return True, f"🚨 Umidade {umidade_ar}% ≥ limite ({umi_max}%)"
+            return True, f"Umidade {umidade_ar}% ≥ limite ({umi_max}%)"
 
         # ✅ 5. Tudo normal
         self.desligar()
-        return False, "✅ Condições normais"
+        return False, "Condições normais"

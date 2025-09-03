@@ -45,20 +45,20 @@ class Luminaria:
 
         if fotoperiodo >= 24:
             self.ligar()
-            return True, "🔁 Fotoperíodo 24h — ligada continuamente"
+            return True, "Fotoperíodo 24h — ligada continuamente"
 
         if hora_inicio <= hora_fim:
             if hora_inicio <= hora_atual <= hora_fim:
                 self.ligar()
-                return True, f"🕕 Dentro do fotoperíodo (06:00 → {hora_fim.strftime('%H:%M')})"
+                return True, f"Dentro do fotoperíodo (06:00 → {hora_fim.strftime('%H:%M')})"
             else:
                 self.desligar()
-                return False, f"🌙 Fora do fotoperíodo (06:00 → {hora_fim.strftime('%H:%M')})"
+                return False, f"Fora do fotoperíodo (06:00 → {hora_fim.strftime('%H:%M')})"
         else:
             # Ciclo atravessa a meia-noite
             if hora_atual >= hora_inicio or hora_atual <= hora_fim:
                 self.ligar()
-                return True, f"🕕 Dentro do fotoperíodo cruzando a meia-noite (06:00 → {hora_fim.strftime('%H:%M')})"
+                return True, f"Dentro do fotoperíodo cruzando a meia-noite (06:00 → {hora_fim.strftime('%H:%M')})"
             else:
                 self.desligar()
-                return False, f"🌙 Fora do fotoperíodo cruzando a meia-noite (06:00 → {hora_fim.strftime('%H:%M')})"
+                return False, f"Fora do fotoperíodo cruzando a meia-noite (06:00 → {hora_fim.strftime('%H:%M')})"

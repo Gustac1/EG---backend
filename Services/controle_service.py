@@ -21,7 +21,7 @@ def controlar_atuadores(estufa_id, ventoinha, luminaria, bomba, aquecedor,
 
             # --- Standby ---
             if config.get("FaseAtual") == "Standby":
-                motivo = "🛑 Estufa em Standby"
+                motivo = "Estufa em Standby"
                 ventoinha.desligar(); atualizar_status_ventilacao(estufa_id, False)
                 luminaria.desligar(); bomba.desligar(); aquecedor.desligar()
 
@@ -154,7 +154,7 @@ def desligar_todos_atuadores(estufa_id, ventoinha, luminaria, bomba, aquecedor,
     Usado em eventos de reinício/reset.
     """
     try:
-        motivo = "🛑 Estufa em Standby"
+        motivo = "Estufa em Standby"
 
         ventoinha.desligar(); atualizar_status_ventilacao(estufa_id, False)
         luminaria.desligar(); bomba.desligar(); aquecedor.desligar()

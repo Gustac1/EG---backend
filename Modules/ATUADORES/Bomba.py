@@ -11,7 +11,7 @@ class Bomba:
 
     VAZAO_ML_POR_SEGUNDO = 1.31         # Vazão calibrada da bomba INTLLAB
     VOLUME_POR_IRRIGACAO = 100          # Volume padrão por irrigação (mL)
-    TEMPO_REACAO_UMIDADE = 1800         # Tempo de espera após irrigação (s) — 30 minutos
+    TEMPO_REACAO_UMIDADE = 120        # Tempo de espera após irrigação (s) — 30 minutos 1800
 
     def __init__(self, pino=22):
         self.pino = pino
@@ -53,14 +53,14 @@ class Bomba:
         """
         if umidade_solo is None:
             self.desligar()
-            return False, "⚠️ Leitura inválida de umidade"
+            return False, "Leitura inválida de umidade"
 
         # ⏱️ Verifica tempo desde última irrigação
         if self.ultimo_acionamento:
             tempo_passado = (datetime.now() - self.ultimo_acionamento).total_seconds()
             if tempo_passado < self.TEMPO_REACAO_UMIDADE:
                 self.desligar()
-                return False, f"⏳ Aguardando reação ({int(tempo_passado)}s / {self.TEMPO_REACAO_UMIDADE}s)"
+                return False, f"Aguardando reação ({int(tempo_passado)}s / {self.TEMPO_REACAO_UMIDADE}s)"
 
         # 🧪 Override ativo
         if config.get("OverrideUmidadeDoSolo", False):
@@ -68,10 +68,10 @@ class Bomba:
             if umi_desejada is not None and umidade_solo < umi_desejada:
                 duracao = self._calcular_tempo_irrigacao()
                 self.ligar(duracao)
-                return True, f"⚠️ Override: {umidade_solo}% < {umi_desejada}% → irrigando {duracao:.2f}s"
+                return True, f"Override: {umidade_solo}% < {umi_desejada}% → irrigando {duracao:.2f}s"
             else:
                 self.desligar()
-                return False, f"✅ Override: Umidade adequada ({umidade_solo}%)"
+                return False, f"Override: Umidade adequada ({umidade_solo}%)"
 
         # 🌱 Lógica padrão
         umi_min = config.get("UmidadeDoSoloMin", 30)
@@ -80,14 +80,14 @@ class Bomba:
         if umidade_solo < umi_min:
             duracao = self._calcular_tempo_irrigacao()
             self.ligar(duracao)
-            return True, f"⚠️ Umidade baixa ({umidade_solo}% < {umi_min}%) → irrigando {duracao:.2f}s"
+            return True, f"Umidade baixa ({umidade_solo}% < {umi_min}%) → irrigando {duracao:.2f}s"
 
         if umidade_solo > umi_max:
             self.desligar()
-            return False, f"🚨 Solo muito úmido ({umidade_solo}% > {umi_max}%)"
+            return False, f"Solo muito úmido ({umidade_solo}% > {umi_max}%)"
 
         self.desligar()
-        return False, f"✅ Umidade adequada ({umidade_solo}%)"
+        return False, f"Umidade adequada ({umidade_solo}%)"
 
     def _calcular_tempo_irrigacao(self):
         """Calcula o tempo necessário para entregar o volume configurado."""

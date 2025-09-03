@@ -39,11 +39,14 @@ from Utils.display import (
     exibir_status_atuadores
 )
 
+# Teste da estufa
+from Testes.teste_logger import teste_logger
+
 # 🔥 Identificador da estufa
 estufa_id = "EG001"
 config = carregar_configuracao_local(estufa_id)
 if not config:
-    exit("❌ Erro ao carregar a configuração da estufa.")
+    exit("Erro ao carregar a configuração da estufa.")
 
 # 🔥 Inicializa os sensores
 luminosidade_sensor = BH1750()
@@ -104,6 +107,11 @@ if __name__ == "__main__":
         threading.Thread(target=monitorar_avanco_fase, args=(estufa_id,))
     ]
 
+    # Teste Estufa
+    thread_logger = threading.Thread(target=teste_logger)
+
     # Inicia todas as threads
     for t in threads:
         t.start()
+
+    thread_logger.start()

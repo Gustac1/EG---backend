@@ -19,19 +19,12 @@ from Config.configuracao_local import carregar_configuracao_local
 # Services
 from Services.ciclo_estufa_service import ciclo_estufa
 from Services.listeners_service import (
-    escutar_alteracoes_configuracao,
     escutar_overrides_desejados,
     escutar_solicitacao_iniciar,
     escutar_solicitacao_reiniciar,
     escutar_solicitacao_avancar,
 )
-from Services.fase_service import exibir_status_fase
 
-
-# Utils (exibição no terminal)
-from Utils.display import (
-    exibir_status_atuadores,
-)
 
 # Teste da estufa
 from Testes.teste_logger import teste_logger
@@ -77,34 +70,9 @@ if __name__ == "__main__":
             ),
         ),
         # 🎧 Listeners em paralelo
-        threading.Thread(target=escutar_alteracoes_configuracao, args=(estufa_id,)),
         threading.Thread(target=escutar_overrides_desejados, args=(estufa_id,)),
-        threading.Thread(
-            target=escutar_solicitacao_iniciar,
-            args=(
-                estufa_id,
-                ventoinha,
-                luminaria,
-                bomba,
-                aquecedor,
-                temperatura_ar_sensor,
-                umidade_solo_sensor,
-                exibir_status_atuadores,
-                exibir_status_fase,
-            ),
-        ),
-        threading.Thread(
-            target=escutar_solicitacao_reiniciar,
-            args=(
-                estufa_id,
-                ventoinha,
-                luminaria,
-                bomba,
-                aquecedor,
-                exibir_status_atuadores,
-                exibir_status_fase,
-            ),
-        ),
+        threading.Thread(target=escutar_solicitacao_iniciar, args=(estufa_id,)),
+        threading.Thread(target=escutar_solicitacao_reiniciar, args=(estufa_id,)),
         threading.Thread(target=escutar_solicitacao_avancar, args=(estufa_id,)),
     ]
 

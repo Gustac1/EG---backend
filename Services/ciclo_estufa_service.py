@@ -1,5 +1,6 @@
 # Services/ciclo_estufa_service.py
 import time
+import threading
 from contextlib import nullcontext
 from Utils.logger import warn
 from Services.controle_service import controlar_atuadores
@@ -7,14 +8,17 @@ from Services.envio_service import enviar_dados_periodicamente
 from Services.fase_service import verificar_e_avancar_fase
 from Services.coleta_service import coletar_dados
 from Config.firebase_config import enviar_dados_realtime
-from Services.fase_service import exibir_status_fase
 from Utils.display import (
     exibir_bloco_sensores,
     exibir_status_atuadores,
     exibir_dados_periodicos,
+    exibir_status_fase,
 )
 from Config.configuracao_local import carregar_configuracao_local
 from Config.firebase_config import atualizar_status_atuador
+
+
+ciclo_reset_event = threading.Event()
 
 
 def ciclo_estufa(
@@ -82,4 +86,7 @@ def ciclo_estufa(
 
         # 6. Intervalo único do ciclo
         print(f"⏳ Aguardando próximo ciclo ({tempo_ciclo}s)...\n")
-        time.sleep(tempo_ciclo)
+
+        if ciclo_reset_event.wait(timeout=tempo_ciclo):
+            print("🔄 Ciclo resetado por listener!")
+            ciclo_reset_event.clear()

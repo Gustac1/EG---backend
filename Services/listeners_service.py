@@ -3,34 +3,38 @@ from Utils.logger import warn
 from Config.firebase_config import firestore_db
 from Config.configuracao_local import carregar_configuracao_local, carregar_preset
 from google.cloud import firestore
-from Services.controle_service import rodar_controle_once
-from Services.controle_service import desligar_todos_atuadores
+from Services.iniciar_estufa import iniciar_estufa
+from Services.reiniciar_estufa import reiniciar_estufa
+from Services.avancar_fase_forcado import avancar_fase_forcado
+from Services.ciclo_estufa_service import ciclo_reset_event
 
 
-def escutar_alteracoes_configuracao(estufa_id):
-    """Escuta alterações na configuração da estufa no Firestore."""
-
-    def callback(doc_snapshot, changes, read_time):
-        for doc in doc_snapshot:
-            nova_config = carregar_configuracao_local(estufa_id)
-            if not nova_config:
-                warn("Falha ao atualizar configuração local.")
-
-    doc_ref = firestore_db.collection("Dispositivos").document(estufa_id)
-    doc_ref.on_snapshot(callback)
+from Config.firebase_config import firestore_db
+from Services.ciclo_estufa_service import ciclo_reset_event
 
 
 def escutar_overrides_desejados(estufa_id):
-    """Escuta alterações nos overrides individuais de cada variável."""
+    """
+    Cria um listener separado para cada variável com override.
+    Isso garante que o callback só dispara quando aquele campo muda.
+
+    Regras:
+      - Só dispara se a estufa estiver ativa (EstadoSistema=True)
+        e em fase operacional (≠ Standby, ≠ Colheita).
+      - Quando o campo muda (True ou False), reseta o ciclo.
+    """
     variaveis = [
         "Temperatura",
         "TemperaturaDoSolo",
         "Umidade",
         "UmidadeDoSolo",
         "Luminosidade",
+        "Ventilacao",
     ]
 
     for variavel in variaveis:
+        campo_override = f"Override{variavel}"
+
         doc_ref = (
             firestore_db.collection("Dispositivos")
             .document(estufa_id)
@@ -38,7 +42,13 @@ def escutar_overrides_desejados(estufa_id):
             .document(variavel)
         )
 
-        def callback(doc_snapshot, changes, read_time, variavel=variavel):
+        def callback(
+            doc_snapshot,
+            changes,
+            read_time,
+            variavel=variavel,
+            campo_override=campo_override,
+        ):
             try:
                 doc_estufa = (
                     firestore_db.collection("Dispositivos").document(estufa_id).get()
@@ -47,30 +57,45 @@ def escutar_overrides_desejados(estufa_id):
                     return
 
                 dados_estufa = doc_estufa.to_dict()
-                campo_override = f"Override{variavel}"
+                fase = dados_estufa.get("FaseAtual")
+                ativo = dados_estufa.get("EstadoSistema", False)
 
-                if dados_estufa.get(campo_override, False):
-                    nova_config = carregar_configuracao_local(estufa_id)
-                    if not nova_config:
-                        warn(f"Erro ao atualizar config após mudança em '{variavel}'")
+                if not ativo or fase in ("Standby", "Colheita"):
+                    print(
+                        f"ℹ️ Override ignorado para {variavel} (fase={fase}, ativo={ativo})"
+                    )
+                    return
+
+                if campo_override in dados_estufa:
+                    valor = dados_estufa[campo_override]
+                    print(f"🔄 Override atualizado: {campo_override} = {valor}")
+                    ciclo_reset_event.set()
+
             except Exception as e:
-                warn(f"Erro no listener de override '{variavel}': {e}")
+                print(f"[ERRO] Listener de override '{variavel}' falhou: {e}")
 
         doc_ref.on_snapshot(callback)
 
 
-def escutar_solicitacao_iniciar(
-    estufa_id,
-    ventoinha,
-    luminaria,
-    bomba,
-    aquecedor,
-    temperatura_ar_sensor,
-    umidade_solo_sensor,
-    exibir_status_atuadores=None,
-    exibir_status_fase=None,
-):
+def escutar_solicitacao_iniciar(estufa_id):
+    """
+    Listener para a solicitação de início da estufa.
 
+    Esse listener monitora o documento:
+        Dispositivos/{estufa_id}/Solicitacoes/Iniciar
+
+    Quando o campo "Status" é alterado para "pending":
+      1. Chama a função `iniciar_estufa` passando a planta e a fase desejadas.
+      2. Atualiza a solicitação para "confirmed" se tudo ocorrer bem.
+      3. Caso ocorra erro, atualiza a solicitação para "error"
+         e registra a mensagem de erro.
+
+    Parâmetros:
+        estufa_id (str): Identificador único da estufa.
+
+    Retorna:
+        None
+    """
     doc_ref = (
         firestore_db.collection("Dispositivos")
         .document(estufa_id)
@@ -86,59 +111,44 @@ def escutar_solicitacao_iniciar(
 
             if dados.get("Status") == "pending":
                 try:
-                    planta = dados.get("Planta")
-                    fase = dados.get("Fase")
-
-                    # valida preset
-                    preset = carregar_preset(planta, fase)
-                    if not preset:
-                        raise Exception("Preset não encontrado")
-
-                    # atualiza estado da estufa no Firestore
-                    firestore_db.collection("Dispositivos").document(estufa_id).update(
-                        {
-                            "PlantaAtual": planta,
-                            "FaseAtual": fase,
-                            "InicioFaseTimestamp": firestore.SERVER_TIMESTAMP,
-                            "EstadoSistema": True,
-                        }
+                    iniciar_estufa(
+                        estufa_id,
+                        dados.get("Planta"),
+                        dados.get("Fase"),
                     )
 
-                    # confirma solicitação
+                    # Confirma solicitação
                     doc_ref.update({"Status": "confirmed", "MensagemErro": None})
 
-                    # recarrega config local
-                    carregar_configuracao_local(estufa_id)
-
-                    # 🚀 rodada imediata de controle
-                    rodar_controle_once(
-                        estufa_id,
-                        ventoinha,
-                        luminaria,
-                        bomba,
-                        aquecedor,
-                        temperatura_ar_sensor,
-                        umidade_solo_sensor,
-                        exibir_status_atuadores,
-                        exibir_status_fase,
-                    )
-
                 except Exception as e:
+                    # Marca erro na solicitação
                     doc_ref.update({"Status": "error", "MensagemErro": str(e)})
-                    warn(f"Erro ao iniciar: {e}")
+                    print(f"[ERRO] Falha ao iniciar estufa {estufa_id}: {e}")
 
+    # Ativa o listener em tempo real
     doc_ref.on_snapshot(callback)
 
 
-def escutar_solicitacao_reiniciar(
-    estufa_id,
-    ventoinha,
-    luminaria,
-    bomba,
-    aquecedor,
-    exibir_status_atuadores=None,
-    exibir_status_fase=None,
-):
+def escutar_solicitacao_reiniciar(estufa_id):
+    """
+    Listener para a solicitação de reinício da estufa.
+
+    Esse listener monitora o documento:
+        Dispositivos/{estufa_id}/Solicitacoes/Reiniciar
+
+    Quando o campo "Status" é alterado para "pending":
+      1. Chama a função `reiniciar_estufa` para atualizar o Firestore
+         e resetar o ciclo da estufa.
+      2. Atualiza a solicitação para "confirmed" se tudo ocorrer bem.
+      3. Caso ocorra erro, atualiza a solicitação para "error"
+         e registra a mensagem de erro.
+
+    Parâmetros:
+        estufa_id (str): Identificador único da estufa.
+
+    Retorna:
+        None
+    """
     doc_ref = (
         firestore_db.collection("Dispositivos")
         .document(estufa_id)
@@ -154,37 +164,32 @@ def escutar_solicitacao_reiniciar(
 
             if dados.get("Status") == "pending":
                 try:
-                    firestore_db.collection("Dispositivos").document(estufa_id).update(
-                        {
-                            "PlantaAtual": "Standby",
-                            "FaseAtual": "Standby",
-                            "InicioFaseTimestamp": None,
-                            "EstadoSistema": False,
-                            "ForcarAvancoFase": False,
-                        }
-                    )
+                    reiniciar_estufa(estufa_id)
 
+                    # Confirma solicitação
                     doc_ref.update({"Status": "confirmed", "MensagemErro": None})
 
-                    # 🚀 desliga imediatamente
-                    desligar_todos_atuadores(
-                        estufa_id,
-                        ventoinha,
-                        luminaria,
-                        bomba,
-                        aquecedor,
-                        exibir_status_atuadores,
-                        exibir_status_fase,
-                    )
-
                 except Exception as e:
+                    # Marca erro na solicitação
                     doc_ref.update({"Status": "error", "MensagemErro": str(e)})
-                    warn(f"Erro ao reiniciar: {e}")
+                    print(f"[ERRO] Falha ao reiniciar estufa {estufa_id}: {e}")
 
+    # Ativa o listener em tempo real
     doc_ref.on_snapshot(callback)
 
 
 def escutar_solicitacao_avancar(estufa_id):
+    """
+    Listener para a solicitação de avanço forçado da fase da estufa.
+
+    Monitora:
+        Dispositivos/{estufa_id}/Solicitacoes/AvancarEtapa
+
+    Quando "Status" == "pending":
+      1. Chama `avancar_fase_forcado`.
+      2. Atualiza solicitação para "confirmed".
+      3. Em caso de erro, atualiza para "error" com a mensagem.
+    """
     doc_ref = (
         firestore_db.collection("Dispositivos")
         .document(estufa_id)
@@ -200,12 +205,10 @@ def escutar_solicitacao_avancar(estufa_id):
 
             if dados.get("Status") == "pending":
                 try:
-                    firestore_db.collection("Dispositivos").document(estufa_id).update(
-                        {"ForcarAvancoFase": True}
-                    )
+                    avancar_fase_forcado(estufa_id)
                     doc_ref.update({"Status": "confirmed", "MensagemErro": None})
                 except Exception as e:
                     doc_ref.update({"Status": "error", "MensagemErro": str(e)})
-                    warn(f"Erro ao processar avanço: {e}")
+                    print(f"[ERRO] Falha ao avançar fase da estufa {estufa_id}: {e}")
 
     doc_ref.on_snapshot(callback)

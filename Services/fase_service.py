@@ -2,9 +2,9 @@
 import time
 from datetime import datetime, timezone
 from dateutil.parser import isoparse
-from Utils.logger import warn
+
 from Config.firebase_config import firestore_db
-from Config.configuracao_local import carregar_configuracao_local, carregar_preset
+from Config.configuracao_local import carregar_preset
 
 
 def proxima_fase(fase_atual):
@@ -93,67 +93,3 @@ def verificar_e_avancar_fase(estufa_id, config):
     except Exception as e:
         print(f"[ERRO] Falha ao avançar fase: {e}")
         return None
-
-
-def monitorar_avanco_fase(estufa_id):
-    while True:
-        verificar_e_avancar_fase(estufa_id)
-        time.sleep(30)  # checa a cada 30s
-
-
-def exibir_status_fase(config):
-    """Exibe informações da fase atual da planta."""
-    try:
-        planta = config.get("PlantaAtual")
-        fase = config.get("FaseAtual")
-        inicio_ts = config.get("InicioFaseTimestamp")
-
-        if not planta or not fase:
-            return
-        hora = datetime.now().strftime("%H:%M:%S")
-
-        if fase == "Colheita":
-            print(f"\n{'='*20} 🌾  Fase Atual da Estufa  [{hora}] {'='*20}\n")
-            print(f"📌 Planta selecionada      : {planta}")
-            print(f"📖 Fase atual              : {fase}")
-            print(f"📴 Sistema finalizado. Nenhum controle ativo.")
-            print("=" * 85)
-            return
-
-        if fase == "Standby":
-            print(f"\n{'='*20} ⏸️  Fase Atual da Estufa  [{hora}] {'='*20}\n")
-            print(f"📌 Planta selecionada      : {planta}")
-            print(f"📖 Fase atual              : {fase}")
-            print(f"⏹️  Estufa em standby. Nenhum controle ativo.")
-            print("=" * 85)
-            return
-
-        if not inicio_ts:
-            return
-        inicio_fase = isoparse(inicio_ts).astimezone(timezone.utc)
-        dias_corridos = (
-            datetime.now(timezone.utc) - inicio_fase
-        ).total_seconds() / 86400
-
-        preset = carregar_preset(planta, fase)
-        if not preset:
-            return
-        dias_total = preset.get("DiasNaEtapa", 9999)
-        dias_restantes = max(0, dias_total - dias_corridos)
-
-        print(f"\n{'='*20} 🌱  Fase Atual da Estufa  [{hora}] {'='*20}\n")
-        print(f"📌 Planta selecionada      : {planta}")
-        print(f"📖 Fase atual              : {fase}")
-        print(
-            f"📅 Duração total da fase   : {dias_total:.4f} dias ({dias_total*1440:.0f} min)"
-        )
-        print(
-            f"⏳ Dias decorridos         : {dias_corridos:.4f} dias ({dias_corridos*1440:.0f} min)"
-        )
-        print(
-            f"⏱️ Dias restantes          : {dias_restantes:.4f} dias ({dias_restantes*1440:.0f} min)"
-        )
-        print("=" * 85)
-
-    except Exception as e:
-        warn(f"Erro ao exibir status da fase: {e}")

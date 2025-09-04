@@ -9,9 +9,12 @@ CREDENCIAIS_PATH = "/home/TCCGustavo/Documents/EG - backend/Config/Credentials/e
 # Isso previne múltiplas inicializações quando este módulo é importado por outros scripts
 if not firebase_admin._apps:
     cred = credentials.Certificate(CREDENCIAIS_PATH)
-    firebase_admin.initialize_app(cred, {
-        'databaseURL': 'https://ecogrowth-772d4-default-rtdb.firebaseio.com/'  # URL do Realtime Database
-    })
+    firebase_admin.initialize_app(
+        cred,
+        {
+            "databaseURL": "https://ecogrowth-772d4-default-rtdb.firebaseio.com/"  # URL do Realtime Database
+        },
+    )
 
 # 🔥 Criação de conexões com Firestore e Realtime Database
 firestore_db = firestore.client()
@@ -23,7 +26,7 @@ def enviar_dados_realtime(estufa_id, dados):
     Atualiza os valores atuais dos sensores no Realtime Database do Firebase.
     - estufa_id: Identificador único da estufa (ex: 'EG001')
     - dados: Dicionário contendo os valores atuais lidos dos sensores
-    
+
     Retorna True em caso de sucesso, False em caso de falha.
     """
     try:
@@ -50,11 +53,15 @@ def enviar_dados_firestore(estufa_id, dados):
 
         for sensor, valor in dados.items():
             if sensor != "timestamp":
-                doc_ref = firestore_db.collection("Dispositivos").document(estufa_id).collection("Dados").document(sensor).collection("Historico").document()
-                batch.set(doc_ref, {
-                    f"{sensor}Atual": valor,
-                    "timestamp": timestamp
-                })
+                doc_ref = (
+                    firestore_db.collection("Dispositivos")
+                    .document(estufa_id)
+                    .collection("Dados")
+                    .document(sensor)
+                    .collection("Historico")
+                    .document()
+                )
+                batch.set(doc_ref, {f"{sensor}Atual": valor, "timestamp": timestamp})
 
         batch.commit()
         return True
@@ -62,33 +69,33 @@ def enviar_dados_firestore(estufa_id, dados):
         print(f"❌ [Firestore] Erro: {e}")
         return False
 
-def atualizar_status_ventilacao(estufa_id: str, ligada: bool):
-    """
-    Atualiza o status da ventilação no Firestore (Dispositivos/EG001/Dados/Ventilacao).
-    """
-    try:
-        doc_ref = firestore_db.collection("Dispositivos").document(estufa_id).collection("Dados").document("Ventilacao")
-        doc_ref.set({"StatusVentilacao": ligada}, merge=True)
-        print(f"✅ Firestore: Ventoinha {'LIGADA' if ligada else 'DESLIGADA'}")
-    except Exception as e:
-        print(f"🚫 Erro ao atualizar status da ventoinha: {e}")
 
-
-def atualizar_status_atuador(estufa_id: str, nome_atuador: str, ligado: bool, motivo: str):
+def atualizar_status_atuador(
+    estufa_id: str, nome_atuador: str, ligado: bool, motivo: str
+):
     """
     Atualiza o status de um atuador no Firestore.
     Exemplo de caminho: Dispositivos/EG001/Dados/Aquecedor
     """
     try:
-        doc_ref = firestore_db.collection("Dispositivos").document(estufa_id).collection("Dados").document(nome_atuador)
+        doc_ref = (
+            firestore_db.collection("Dispositivos")
+            .document(estufa_id)
+            .collection("Dados")
+            .document(nome_atuador)
+        )
 
-        doc_ref.set({
-            "Estado": ligado,
-            "Motivo": motivo,
-        }, merge=True)
+        doc_ref.set(
+            {
+                "Estado": ligado,
+                "Motivo": motivo,
+            },
+            merge=True,
+        )
 
-        print(f"✅ Firestore: {nome_atuador} {'LIGADO' if ligado else 'DESLIGADO'} | Motivo: {motivo}")
+        print(
+            f"✅ Firestore: {nome_atuador} {'LIGADO' if ligado else 'DESLIGADO'} | Motivo: {motivo}"
+        )
 
     except Exception as e:
         print(f"🚫 Erro ao atualizar {nome_atuador}: {e}")
-

@@ -1,0 +1,76 @@
+timestamp,planta,fase,luminosidade,temp_ar,umid_ar,temp_solo,umid_solo,aquecedor_estado,aquecedor_motivo,ventoinha_estado,ventoinha_motivo,luminaria_estado,luminaria_motivo,bomba_estado,bomba_motivo
+2025-09-02T22:03:45.518528,Standby,Standby,0.0,21.7,83.4,20.62,63.39,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:15:54.342681,Standby,Standby,0.0,21.6,83.9,20.5,63.65,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:17:12.912669,Standby,Standby,0.0,21.5,84.4,20.69,64.82,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:19:12.974894,Standby,Standby,0.0,21.5,84.5,20.69,64.55,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:21:00.282819,Standby,Standby,0.0,21.5,84.4,20.5,64.68,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:21:30.577276,Standby,Standby,0.0,21.6,84.5,20.62,64.88,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:22:00.884688,Standby,Standby,0.0,21.6,84.5,20.62,64.88,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:22:33.835061,Standby,Standby,0.0,21.6,84.5,20.62,64.88,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:23:04.414479,Standby,Standby,0.0,21.5,84.5,20.56,64.32,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:23:34.728344,Standby,Standby,0.0,21.5,84.5,20.56,64.32,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:24:05.045590,Standby,Standby,0.0,21.5,84.5,20.56,64.32,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:24:35.335674,Standby,Standby,0.0,21.5,84.5,20.56,64.32,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:24:40.704983,Standby,Standby,0.0,21.5,84.5,20.56,64.32,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:25:10.981241,Standby,Standby,0.0,21.5,84.5,20.56,64.14,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:25:26.651707,Standby,Standby,0.0,21.5,84.5,20.56,64.14,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:25:56.944167,Standby,Standby,0.0,21.5,84.6,20.56,64.99,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:26:27.265960,Standby,Standby,0.0,21.5,84.6,20.56,64.99,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:26:57.565643,Standby,Standby,0.0,21.5,84.6,20.56,64.99,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:27:27.897801,Standby,Standby,0.0,21.5,84.6,20.56,64.99,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:27:40.798120,Standby,Standby,0.0,21.5,84.6,20.56,64.99,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:28:11.090031,Standby,Standby,0.0,,,20.56,64.22,False,Temperatura inválida,False,Leitura inválida de sensores,False,Fora do fotoperíodo (06:00 → 18:00),False,Umidade adequada (64.9%)
+2025-09-02T22:28:41.382171,Standby,Standby,0.0,,,20.56,64.22,False,Temperatura inválida,False,Leitura inválida de sensores,False,Fora do fotoperíodo (06:00 → 18:00),False,Umidade adequada (64.9%)
+2025-09-02T22:29:11.694509,Standby,Standby,0.0,,,20.56,64.22,False,Temperatura inválida,False,Leitura inválida de sensores,False,Fora do fotoperíodo (06:00 → 18:00),False,Umidade adequada (64.9%)
+2025-09-02T22:29:42.007192,Standby,Standby,0.0,,,20.56,64.22,False,Temperatura inválida,False,Leitura inválida de sensores,False,Fora do fotoperíodo (06:00 → 18:00),False,Umidade adequada (64.9%)
+2025-09-02T22:30:09.201512,Standby,Standby,0.0,,,20.56,64.22,False,Temperatura inválida,False,Leitura inválida de sensores,False,Fora do fotoperíodo (06:00 → 18:00),False,Umidade adequada (64.9%)
+2025-09-02T22:30:39.504757,Standby,Standby,0.0,21.5,84.5,20.56,64.82,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:31:09.824057,Standby,Standby,0.0,21.5,84.5,20.56,64.82,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:31:40.109170,Standby,Standby,0.0,21.5,84.5,20.56,64.82,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:32:10.428423,Standby,Standby,0.0,21.5,84.5,20.56,64.82,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:32:40.725967,Standby,Standby,0.0,21.5,84.5,20.56,64.82,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:33:02.165089,Standby,Standby,0.0,21.5,84.5,20.56,64.82,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:33:32.456714,Standby,Standby,0.0,21.5,84.6,20.5,65.15,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:34:02.735316,Standby,Standby,0.0,21.5,84.6,20.5,64.32,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:34:33.026933,Alface,Germinacao,0.0,21.5,84.6,20.56,64.35,False,21.5°C entre 20°C e 25°C,False,Condições normais,False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (64.7%)
+2025-09-02T22:35:03.310312,Standby,Standby,0.0,21.5,84.6,20.56,64.42,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:35:33.607209,Standby,Standby,0.0,21.5,84.7,20.56,64.98,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:36:03.902612,Standby,Standby,0.0,21.5,84.6,20.56,64.56,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:36:34.178194,Standby,Standby,0.0,21.5,84.6,20.5,64.56,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:37:04.478999,Standby,Standby,0.0,21.5,84.6,20.56,65.24,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:37:35.772853,Standby,Standby,0.0,21.5,84.6,20.62,65.27,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:38:06.066542,Standby,Standby,0.0,21.5,84.6,20.56,64.51,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:38:36.390265,Standby,Standby,0.0,21.5,84.6,20.5,64.45,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:39:06.690176,Alface,Germinacao,0.0,21.5,84.6,20.56,65.09,False,21.5°C entre 20°C e 25°C,False,Condições normais,False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (64.58%)
+2025-09-02T22:39:37.024455,Alface,Germinacao,0.0,21.5,84.6,20.56,65.25,False,21.5°C ≥ desejada (13°C),True,Temperatura 21.5°C > desejada (13°C),False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (65.37%)
+2025-09-02T22:40:07.457080,Alface,Germinacao,0.0,,,20.56,64.71,False,21.5°C ≥ desejada (13°C),True,Temperatura 21.5°C > desejada (13°C),False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (65.52%)
+2025-09-02T22:40:37.784979,Alface,Germinacao,0.0,21.5,85.1,20.56,65.62,False,21.5°C ≥ desejada (13°C),True,Temperatura 21.5°C > desejada (13°C),False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (65.49%)
+2025-09-02T22:41:08.134652,Alface,Germinacao,0.0,21.5,85.6,20.56,65.33,False,21.5°C ≥ desejada (13°C),True,Temperatura 21.5°C > desejada (13°C),False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (65.28%)
+2025-09-02T22:41:38.489768,Alface,Germinacao,0.0,21.5,85.8,20.56,65.64,False,21.5°C ≥ desejada (13°C),True,Temperatura 21.5°C > desejada (13°C),False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (65.45%)
+2025-09-02T22:42:08.821469,Alface,Germinacao,0.0,21.5,85.9,20.56,65.42,False,21.5°C ≥ desejada (13°C),True,Temperatura 21.5°C > desejada (13°C),False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (64.78%)
+2025-09-02T22:42:39.209417,Alface,Germinacao,0.0,21.5,85.9,20.62,65.28,False,21.5°C ≥ desejada (13°C),True,Temperatura 21.5°C > desejada (13°C),False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (65.25%)
+2025-09-02T22:43:09.531420,Alface,Crescimento,0.0,21.5,86.1,20.62,65.18,False,21.5°C entre 20°C e 25°C,False,Condições normais,False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (64.98%)
+2025-09-02T22:43:39.838732,Alface,Crescimento,0.0,21.5,86.1,20.62,65.18,False,21.5°C entre 20°C e 25°C,False,Condições normais,False,Fora do fotoperíodo (06:00 → 20:54),False,Umidade adequada (64.98%)
+2025-09-02T22:44:10.177492,Alface,Crescimento,0.0,21.5,86.1,20.56,64.68,False,21.5°C entre 18°C e 22°C,True,Umidade 86.1% ≥ limite (80%),False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (65.23% > 60%)
+2025-09-02T22:44:40.503509,Alface,Crescimento,0.0,21.5,86.0,20.62,65.67,False,21.5°C entre 18°C e 22°C,True,Umidade 86.0% ≥ limite (80%),False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (65.71% > 60%)
+2025-09-02T22:45:10.869442,Alface,Crescimento,0.0,21.5,86.1,20.62,65.71,True,21.5°C < desejada (64°C),True,Ligada junto com o aquecedor,False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (65.07% > 60%)
+2025-09-02T22:45:41.211246,Alface,Crescimento,0.0,21.5,86.1,20.62,65.18,True,21.5°C < desejada (64°C),True,Ligada junto com o aquecedor,False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (65.18% > 60%)
+2025-09-02T22:46:11.531711,Alface,Crescimento,0.0,21.5,86.1,20.62,64.82,True,21.5°C < desejada (64°C),True,Ligada junto com o aquecedor,False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (64.79% > 60%)
+2025-09-02T22:46:41.866234,Alface,Crescimento,0.0,21.5,86.1,20.69,65.53,True,21.5°C < desejada (64°C),True,Ligada junto com o aquecedor,False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (65.43% > 60%)
+2025-09-02T22:47:12.219512,Alface,Crescimento,0.0,21.6,86.0,20.62,64.79,True,21.6°C < desejada (64°C),True,Ligada junto com o aquecedor,False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (65.46% > 60%)
+2025-09-02T22:47:42.543549,Alface,Crescimento,0.0,21.6,86.0,20.75,65.12,True,21.6°C < desejada (64°C),True,Ligada junto com o aquecedor,False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (65.51% > 60%)
+2025-09-02T22:48:12.870073,Alface,Crescimento,0.0,21.6,86.0,20.75,64.9,True,21.6°C < desejada (64°C),True,Ligada junto com o aquecedor,False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (65.46% > 60%)
+2025-09-02T22:48:43.194860,Alface,Floracao,0.0,21.7,85.8,20.81,64.79,True,21.7°C < desejada (64°C),True,Ligada junto com o aquecedor,False,Fora do fotoperíodo (06:00 → 20:57),False,Solo muito úmido (65.32% > 60%)
+2025-09-02T22:49:13.521190,Alface,Floracao,0.0,21.7,85.7,20.81,65.03,True,21.7°C < desejada (64°C),True,Ligada junto com o aquecedor,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (65.47% > 50%)
+2025-09-02T22:49:43.830119,Alface,Floracao,19129.17,21.8,85.5,21.12,64.53,False,21.8°C entre 21°C e 27°C,True,Umidade 85.5% ≥ limite (80%),True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (64.46% > 50%)
+2025-09-02T22:50:14.127457,Alface,Floracao,19248.33,22.0,85.2,21.44,64.12,False,22.0°C entre 21°C e 27°C,True,Umidade 85.2% ≥ limite (80%),True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),True,Override: 64.63% < 80% → irrigando 76.34s
+2025-09-02T22:50:44.467428,Alface,Floracao,19117.5,22.2,84.6,21.62,64.75,False,22.2°C entre 21°C e 27°C,True,Umidade 84.6% ≥ limite (80%),True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Aguardando reação (31s / 120s)
+2025-09-02T22:51:14.795106,Alface,Floracao,19127.5,22.4,83.7,21.88,64.19,False,22.4°C entre 21°C e 27°C,True,Umidade 83.7% ≥ limite (80%),True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Aguardando reação (63s / 120s)
+2025-09-02T22:51:45.099789,Alface,Floracao,18757.5,22.6,82.8,22.0,64.21,False,22.6°C entre 21°C e 27°C,True,Umidade 82.8% ≥ limite (80%),True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Aguardando reação (95s / 120s)
+2025-09-02T22:52:15.360617,Standby,Standby,0.0,22.9,81.9,22.19,64.77,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:52:45.629305,Standby,Standby,0.0,23.0,81.1,22.0,65.39,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:53:15.951779,Standby,Standby,0.0,23.1,80.9,21.94,64.73,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:53:46.220296,Standby,Standby,0.0,23.1,80.6,21.88,65.61,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:54:16.509879,Standby,Standby,0.0,23.1,80.6,21.88,65.61,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:54:46.810724,Standby,Standby,0.0,23.1,80.2,21.75,65.22,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-02T22:55:17.093499,Standby,Standby,0.0,23.1,80.1,21.75,65.74,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby

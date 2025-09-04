@@ -19,7 +19,6 @@ from Config.configuracao_local import carregar_configuracao_local
 # Services
 from Services.ciclo_estufa_service import ciclo_estufa
 from Services.listeners_service import (
-    escutar_overrides_desejados,
     escutar_solicitacao_iniciar,
     escutar_solicitacao_reiniciar,
     escutar_solicitacao_avancar,
@@ -42,7 +41,7 @@ tempo_ciclo = 30
 # 🔥 Inicializa os sensores
 luminosidade_sensor = BH1750()
 temperatura_solo_sensor = DS18B20()
-temperatura_ar_sensor = DHT22(pin=board.D17)
+temperatura_ar_sensor = DHT22()
 umidade_solo_sensor = UmidadeSolo()
 
 # 🔥 Inicializa os atuadores
@@ -70,7 +69,6 @@ if __name__ == "__main__":
             ),
         ),
         # 🎧 Listeners em paralelo
-        threading.Thread(target=escutar_overrides_desejados, args=(estufa_id,)),
         threading.Thread(target=escutar_solicitacao_iniciar, args=(estufa_id,)),
         threading.Thread(target=escutar_solicitacao_reiniciar, args=(estufa_id,)),
         threading.Thread(target=escutar_solicitacao_avancar, args=(estufa_id,)),

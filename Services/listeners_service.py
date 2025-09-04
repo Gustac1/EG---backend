@@ -1,80 +1,11 @@
 # Services/listeners_service.py
 from Utils.logger import warn
 from Config.firebase_config import firestore_db
-from Config.configuracao_local import carregar_configuracao_local, carregar_preset
 from google.cloud import firestore
 from Services.iniciar_estufa import iniciar_estufa
 from Services.reiniciar_estufa import reiniciar_estufa
 from Services.avancar_fase_forcado import avancar_fase_forcado
-from Services.ciclo_estufa_service import ciclo_reset_event
-
-
 from Config.firebase_config import firestore_db
-from Services.ciclo_estufa_service import ciclo_reset_event
-
-
-def escutar_overrides_desejados(estufa_id):
-    """
-    Cria um listener separado para cada variável com override.
-    Isso garante que o callback só dispara quando aquele campo muda.
-
-    Regras:
-      - Só dispara se a estufa estiver ativa (EstadoSistema=True)
-        e em fase operacional (≠ Standby, ≠ Colheita).
-      - Quando o campo muda (True ou False), reseta o ciclo.
-    """
-    variaveis = [
-        "Temperatura",
-        "TemperaturaDoSolo",
-        "Umidade",
-        "UmidadeDoSolo",
-        "Luminosidade",
-        "Ventilacao",
-    ]
-
-    for variavel in variaveis:
-        campo_override = f"Override{variavel}"
-
-        doc_ref = (
-            firestore_db.collection("Dispositivos")
-            .document(estufa_id)
-            .collection("Dados")
-            .document(variavel)
-        )
-
-        def callback(
-            doc_snapshot,
-            changes,
-            read_time,
-            variavel=variavel,
-            campo_override=campo_override,
-        ):
-            try:
-                doc_estufa = (
-                    firestore_db.collection("Dispositivos").document(estufa_id).get()
-                )
-                if not doc_estufa.exists:
-                    return
-
-                dados_estufa = doc_estufa.to_dict()
-                fase = dados_estufa.get("FaseAtual")
-                ativo = dados_estufa.get("EstadoSistema", False)
-
-                if not ativo or fase in ("Standby", "Colheita"):
-                    print(
-                        f"ℹ️ Override ignorado para {variavel} (fase={fase}, ativo={ativo})"
-                    )
-                    return
-
-                if campo_override in dados_estufa:
-                    valor = dados_estufa[campo_override]
-                    print(f"🔄 Override atualizado: {campo_override} = {valor}")
-                    ciclo_reset_event.set()
-
-            except Exception as e:
-                print(f"[ERRO] Listener de override '{variavel}' falhou: {e}")
-
-        doc_ref.on_snapshot(callback)
 
 
 def escutar_solicitacao_iniciar(estufa_id):

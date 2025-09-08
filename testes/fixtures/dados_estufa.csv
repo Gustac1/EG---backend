@@ -1,0 +1,543 @@
+timestamp,planta,fase,luminosidade,temp_ar,umid_ar,temp_solo,umid_solo,aquecedor_estado,aquecedor_motivo,ventoinha_estado,ventoinha_motivo,luminaria_estado,luminaria_motivo,bomba_estado,bomba_motivo
+2025-09-04T17:37:54.664633,Standby,Standby,0.0,25.2,71.8,23.75,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-04T17:38:24.980280,Standby,Standby,0.0,25.1,72.2,23.56,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-04T17:38:55.316806,Alface,Germinacao,2.5,24.8,73.3,23.56,100,False,24.8°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-04T17:39:25.632028,Alface,Germinacao,15571.67,24.8,73.3,23.69,100,False,24.8°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-04T17:39:55.977897,Alface,Germinacao,15646.67,,,23.81,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-04T17:40:26.314835,Alface,Germinacao,15529.17,24.8,73.2,23.88,100,True,24.8°C < desejada (80°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-04T17:40:56.716801,Alface,Germinacao,15275.83,,,0.0,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-04T17:41:27.116357,Alface,Germinacao,15285.0,,,0.0,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-04T17:41:57.497864,Alface,Germinacao,15099.17,24.9,72.9,0.0,99.68,True,24.9°C < desejada (80°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (99.68% > 70%)
+2025-09-04T17:42:28.005968,Alface,Germinacao,15211.67,25.0,72.8,,100,True,25.0°C < desejada (80°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-04T17:42:58.335904,Alface,Germinacao,15290.83,,,,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-04T17:43:28.721397,Alface,Germinacao,15015.0,25.1,72.5,,99.39,True,25.1°C < desejada (80°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (99.39% > 70%)
+2025-09-04T17:43:59.084773,Alface,Crescimento,15128.33,25.1,72.3,,100,True,25.1°C < desejada (80°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Override: Umidade adequada (100%)
+2025-09-04T17:44:29.533957,Alface,Crescimento,15223.33,,,,99.78,False,Temperatura inválida,,,False,Fora do fotoperíodo (06:00 → 17:00),True,Override: 99.78% < 100% → irrigando 76.34s
+2025-09-04T17:44:59.906341,Alface,Crescimento,1.67,25.1,72.1,,100,True,25.1°C < desejada (80°C),,,False,Fora do fotoperíodo (06:00 → 17:00),False,Aguardando reação (31s / 120s)
+2025-09-04T17:45:30.452824,Alface,Crescimento,1.67,25.1,71.9,,100,False,25.1°C ≥ máxima (22°C),,,False,Fora do fotoperíodo (06:00 → 17:00),False,Aguardando reação (62s / 120s)
+2025-09-04T17:46:00.840546,Alface,Crescimento,1.67,25.1,71.9,,100,False,Temperatura inválida,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Aguardando reação (62s / 120s)
+2025-09-04T17:46:31.197270,Alface,Crescimento,1.67,,,,100,False,Temperatura inválida,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Aguardando reação (93s / 120s)
+2025-09-04T17:47:01.541688,Alface,Crescimento,1.67,,,,100,False,Temperatura inválida,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Override: Umidade adequada (100%)
+2025-09-04T17:47:31.917728,Alface,Crescimento,1.67,24.8,72.3,,100,False,24.8°C ≥ máxima (22°C),,,False,Fora do fotoperíodo (06:00 → 17:00),False,Override: Umidade adequada (100%)
+2025-09-04T17:48:02.336552,Alface,Crescimento,1.67,24.7,72.5,,100,False,24.7°C ≥ máxima (22°C),,,False,Fora do fotoperíodo (06:00 → 17:00),False,Override: Umidade adequada (100%)
+2025-09-04T17:48:32.672360,Alface,Crescimento,1.67,24.6,72.8,,100,False,24.6°C ≥ máxima (22°C),,,False,Fora do fotoperíodo (06:00 → 17:00),False,Override: Umidade adequada (100%)
+2025-09-04T17:49:03.059471,Alface,Crescimento,1.67,24.5,73.3,,100,False,24.5°C ≥ máxima (22°C),,,False,Fora do fotoperíodo (06:00 → 17:00),False,Override: Umidade adequada (100%)
+2025-09-04T17:49:33.385431,Alface,Floracao,21.67,24.4,73.5,,100,False,24.4°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Override: Umidade adequada (100%)
+2025-09-04T18:04:17.396259,Standby,Standby,19019.17,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-04T18:40:31.032255,Standby,Standby,0.0,24.6,74.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-04T18:41:01.345203,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-04T19:38:54.574369,Standby,Standby,0.0,23.9,77.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-04T19:39:27.959059,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:50:33.808450,Standby,Standby,0.0,23.0,80.1,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:51:04.209997,Standby,Standby,0.0,17.8,77.1,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:51:35.423822,Standby,Standby,0.0,17.8,77.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:52:05.799024,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:52:36.114754,Standby,Standby,0.0,17.8,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:53:06.408318,Standby,Standby,0.0,17.8,77.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:53:36.698283,Standby,Standby,0.0,17.8,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:54:07.022528,Standby,Standby,0.0,17.8,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:54:37.824292,Standby,Standby,0.0,17.8,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T13:55:08.351032,Alface,Germinacao,0.0,17.8,77.1,,100,True,17.8°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T13:55:38.867162,Alface,Germinacao,17520.0,17.8,77.1,,100,True,17.8°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T13:56:09.209004,Alface,Floracao,17207.5,18.0,77.0,,100,True,18.0°C < mínima (21°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T13:56:39.519432,Alface,Germinacao,0.0,18.1,76.5,,100,True,18.1°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T13:57:09.872416,Alface,Germinacao,17048.33,18.2,76.3,,100,True,18.2°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T13:57:40.194550,Alface,Germinacao,17016.67,18.3,75.7,,100,True,18.3°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T13:58:11.239193,Alface,Germinacao,17202.5,18.5,75.1,,100,True,18.5°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T13:58:41.572991,Alface,Germinacao,16861.67,18.7,74.4,,100,True,18.7°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T13:59:11.885449,Alface,Germinacao,17178.33,18.9,73.7,,100,True,18.9°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T13:59:42.457738,Alface,Germinacao,17145.83,19.2,73.0,,100,True,19.2°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T14:00:12.742343,Alface,Germinacao,17085.83,19.4,72.3,,100,True,19.4°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T14:00:43.061444,Alface,Germinacao,17023.33,19.6,71.7,,100,True,19.6°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T14:01:13.457306,Alface,Germinacao,16843.33,19.7,70.9,,100,True,19.7°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T14:01:43.754502,Alface,Crescimento,17011.67,19.9,70.4,,100,True,19.9°C < mínima (20°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T14:02:14.049505,Alface,Crescimento,16984.17,20.1,69.8,,100,False,20.1°C entre 18°C e 22°C,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T14:02:44.405921,Alface,Crescimento,16649.17,20.3,69.3,,99.62,False,20.3°C entre 18°C e 22°C,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (99.62% > 60%)
+2025-09-07T14:03:14.704852,Alface,Crescimento,16679.17,20.4,68.9,,98.81,False,20.4°C entre 18°C e 22°C,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (98.81% > 60%)
+2025-09-07T14:03:45.012338,Alface,Crescimento,16493.33,20.6,68.6,,99.01,False,20.6°C entre 18°C e 22°C,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (99.01% > 60%)
+2025-09-07T14:04:15.326422,Alface,Crescimento,16569.17,20.8,68.2,,98.53,False,20.8°C entre 18°C e 22°C,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (98.53% > 60%)
+2025-09-07T14:04:45.676351,Alface,Crescimento,16751.67,,,,98.44,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (98.44% > 60%)
+2025-09-07T14:05:16.043373,Alface,Crescimento,16650.83,21.1,67.1,,97.47,False,21.1°C entre 18°C e 22°C,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (97.47% > 60%)
+2025-09-07T14:05:46.355226,Alface,Crescimento,16680.83,21.3,66.6,,98.13,False,21.3°C entre 18°C e 22°C,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (98.13% > 60%)
+2025-09-07T14:06:16.732810,Alface,Crescimento,16680.83,21.3,66.6,,98.13,False,21.4°C entre 18°C e 22°C,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (97.82% > 60%)
+2025-09-07T14:06:47.035957,Alface,Crescimento,16443.33,21.4,66.1,,97.82,False,21.4°C entre 18°C e 22°C,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (97.82% > 60%)
+2025-09-07T14:07:17.359848,Alface,Floracao,16541.67,,,,97.47,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (97.47% > 60%)
+2025-09-07T14:07:47.643174,Alface,Floracao,16290.0,21.7,65.0,,96.05,False,21.7°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (96.05% > 50%)
+2025-09-07T14:08:17.950664,Alface,Floracao,16450.83,21.9,64.5,,96.7,False,21.9°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (96.7% > 50%)
+2025-09-07T14:08:48.351375,Alface,Floracao,16274.17,22.0,64.1,,96.58,False,22.0°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (96.58% > 50%)
+2025-09-07T14:09:18.648137,Alface,Floracao,16244.17,22.1,63.6,,96.46,False,22.1°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (96.46% > 50%)
+2025-09-07T14:09:48.960767,Alface,Floracao,16550.83,,,,96.42,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (96.42% > 50%)
+2025-09-07T14:10:19.250865,Alface,Floracao,16490.83,,,,96.39,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (96.39% > 50%)
+2025-09-07T14:10:49.625582,Alface,Floracao,16959.17,,,,95.09,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (95.09% > 50%)
+2025-09-07T14:11:19.935615,Alface,Floracao,16292.5,22.6,62.1,,95.52,False,22.6°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (95.52% > 50%)
+2025-09-07T14:11:50.334423,Alface,Floracao,16495.0,22.6,62.1,,95.78,False,22.6°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (95.78% > 50%)
+2025-09-07T14:12:20.628718,Alface,Colheita,16454.17,,,,94.75,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.75% > 50%)
+2025-09-07T14:12:51.107575,Alface,Colheita,16183.33,22.8,61.3,,95.31,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:13:21.410741,Alface,Colheita,0.0,22.9,61.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:13:51.697485,Alface,Colheita,0.0,22.8,60.8,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:14:21.966541,Alface,Colheita,0.0,22.7,61.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:14:52.229176,Alface,Colheita,0.0,22.6,61.2,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:15:22.501724,Alface,Colheita,0.0,22.5,61.3,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:15:52.770801,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:16:23.052962,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:16:53.329018,Alface,Colheita,0.0,22.1,62.2,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:17:30.200139,Standby,Standby,0.0,21.8,62.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T14:18:00.524711,Alface,Germinacao,0.0,21.7,63.2,,100,False,21.7°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T14:18:30.830906,Alface,Germinacao,16760.83,21.6,63.4,,99.32,False,21.6°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (99.32% > 70%)
+2025-09-07T14:19:01.144801,Alface,Germinacao,16898.33,,,,99.85,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (99.85% > 70%)
+2025-09-07T14:19:31.465926,Alface,Germinacao,16620.0,21.7,63.9,,99.12,False,21.7°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (99.12% > 70%)
+2025-09-07T14:20:01.787660,Alface,Germinacao,16642.5,,,,97.85,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (97.85% > 70%)
+2025-09-07T14:20:32.085345,Alface,Germinacao,16515.0,21.8,63.9,,97.27,False,21.8°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (97.27% > 70%)
+2025-09-07T14:21:02.645686,Alface,Germinacao,16715.83,,,,96.44,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.44% > 70%)
+2025-09-07T14:21:32.937354,Alface,Germinacao,16643.33,,,,96.32,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.32% > 70%)
+2025-09-07T14:22:03.242169,Alface,Germinacao,16335.83,22.1,63.3,,96.78,False,22.1°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.78% > 70%)
+2025-09-07T14:22:33.544835,Alface,Germinacao,16468.33,,,,96.78,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.78% > 70%)
+2025-09-07T14:23:03.852880,Alface,Crescimento,16594.17,22.1,63.3,,95.5,False,22.1°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (95.5% > 70%)
+2025-09-07T14:23:34.179964,Alface,Crescimento,16260.0,22.5,62.4,,96.06,False,22.5°C ≥ máxima (22°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (96.06% > 60%)
+2025-09-07T14:24:04.529395,Alface,Crescimento,16437.5,22.5,62.4,,94.9,False,22.5°C ≥ máxima (22°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.9% > 60%)
+2025-09-07T14:24:34.819892,Alface,Crescimento,16323.33,22.5,62.4,,94.92,False,22.5°C ≥ máxima (22°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.92% > 60%)
+2025-09-07T14:25:05.110679,Alface,Crescimento,16458.33,,,,94.66,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.66% > 60%)
+2025-09-07T14:25:35.449433,Alface,Crescimento,16588.33,22.5,62.4,,95.28,False,22.5°C ≥ máxima (22°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.28% > 60%)
+2025-09-07T14:26:05.789203,Alface,Crescimento,16378.33,,,,94.58,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.58% > 60%)
+2025-09-07T14:26:36.146228,Alface,Crescimento,16644.17,,,,94.53,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.53% > 60%)
+2025-09-07T14:27:06.538338,Alface,Crescimento,16370.0,,,,94.82,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.82% > 60%)
+2025-09-07T14:27:36.848034,Alface,Crescimento,16512.5,,,,94.92,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.92% > 60%)
+2025-09-07T14:28:07.220729,Alface,Crescimento,16512.5,,,,94.92,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.01% > 60%)
+2025-09-07T14:28:37.530596,Alface,Floracao,16586.67,,,,95.01,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.01% > 60%)
+2025-09-07T14:29:07.817069,Alface,Floracao,16242.5,,,,93.95,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (93.95% > 50%)
+2025-09-07T14:29:38.112064,Alface,Floracao,16514.17,,,,94.44,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.44% > 50%)
+2025-09-07T14:30:08.393613,Alface,Floracao,16425.83,,,,94.45,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.45% > 50%)
+2025-09-07T14:40:56.257327,Alface,Floracao,16491.67,,,,94.28,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.28% > 50%)
+2025-09-07T14:41:26.551459,Alface,Colheita,0.0,22.3,61.2,,100,False,22.3°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T14:41:56.839451,Alface,Colheita,16899.17,22.0,61.9,,98.05,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:42:27.132571,Alface,Colheita,0.0,22.0,62.2,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:42:47.386696,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:43:45.034637,Alface,Colheita,0.0,21.9,62.7,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:45:51.372437,Alface,Colheita,0.0,21.8,62.8,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T14:46:21.734546,Alface,Germinacao,0.0,21.2,64.7,,100,False,21.2°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T14:46:52.086625,Alface,Germinacao,17145.0,21.2,64.7,,100,False,21.2°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T14:47:22.558694,Alface,Germinacao,16984.17,,,,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T14:47:52.890245,Alface,Germinacao,17020.83,21.3,65.1,,99.25,True,21.3°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (99.25% > 70%)
+2025-09-07T14:48:23.280701,Alface,Germinacao,16667.5,21.4,64.9,,97.23,True,21.4°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (97.23% > 70%)
+2025-09-07T14:48:53.591955,Alface,Germinacao,16687.5,21.5,64.7,,97.85,True,21.5°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (97.85% > 70%)
+2025-09-07T14:49:23.947516,Alface,Germinacao,16705.83,,,,97.09,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (97.09% > 70%)
+2025-09-07T14:49:54.288383,Alface,Germinacao,16590.83,21.5,64.4,,97.98,True,21.5°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (97.98% > 70%)
+2025-09-07T14:50:24.599857,Alface,Germinacao,16676.67,,,,96.93,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.93% > 70%)
+2025-09-07T14:50:54.966526,Alface,Germinacao,16781.67,,,,98.01,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (98.01% > 70%)
+2025-09-07T14:51:25.352908,Alface,Crescimento,16732.5,,,,97.05,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (97.05% > 70%)
+2025-09-07T14:51:55.670747,Alface,Crescimento,16606.67,,,,97.27,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (97.27% > 60%)
+2025-09-07T14:52:23.160748,Alface,Crescimento,16606.67,,,,97.27,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (97.27% > 60%)
+2025-09-07T14:52:53.517205,Alface,Crescimento,3.33,,,,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T14:53:23.894427,Alface,Crescimento,16464.17,,,,95.39,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.39% > 60%)
+2025-09-07T14:53:54.199772,Alface,Crescimento,16606.67,,,,97.05,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (97.05% > 60%)
+2025-09-07T14:54:24.567239,Alface,Crescimento,16490.83,,,,95.63,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.63% > 60%)
+2025-09-07T14:54:54.916120,Alface,Crescimento,16343.33,,,,94.97,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.97% > 60%)
+2025-09-07T14:55:25.249783,Alface,Crescimento,16370.0,,,,95.45,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.45% > 60%)
+2025-09-07T14:55:55.571690,Alface,Crescimento,16420.0,,,,94.66,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.66% > 60%)
+2025-09-07T14:56:25.961614,Alface,Crescimento,16225.0,,,,95.42,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.42% > 60%)
+2025-09-07T14:56:56.301039,Alface,Floracao,16250.0,,,,95.33,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.33% > 60%)
+2025-09-07T14:57:26.734585,Alface,Floracao,16399.17,,,,95.11,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (95.11% > 50%)
+2025-09-07T14:57:57.068801,Alface,Floracao,16243.33,,,,95.05,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (95.05% > 50%)
+2025-09-07T14:58:27.442243,Alface,Floracao,16243.33,,,,95.05,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (95.05% > 50%)
+2025-09-07T14:58:57.773874,Alface,Floracao,16158.33,,,,94.82,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.82% > 50%)
+2025-09-07T14:59:28.148515,Alface,Floracao,16435.83,,,,95.01,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (95.01% > 50%)
+2025-09-07T14:59:58.495587,Alface,Floracao,16295.0,,,,94.35,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.35% > 50%)
+2025-09-07T15:00:12.560366,Alface,Floracao,16295.0,,,,94.35,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.35% > 50%)
+2025-09-07T15:00:42.902449,Alface,Floracao,4.17,,,,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T15:01:13.256489,Alface,Floracao,16390.83,,,,94.57,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.57% > 50%)
+2025-09-07T15:01:43.566545,Alface,Floracao,16278.33,,,,94.52,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.52% > 50%)
+2025-09-07T15:02:13.844101,Alface,Colheita,16311.67,,,,93.89,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (93.89% > 50%)
+2025-09-07T15:02:44.133468,Alface,Colheita,16099.17,,,,94.47,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:05:28.189829,Alface,Colheita,0.0,24.1,58.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:05:50.075893,Alface,Colheita,0.0,24.0,58.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:06:20.406614,Alface,Colheita,0.0,23.2,59.1,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:06:50.727476,Alface,Germinacao,0.0,23.0,59.7,,100,True,23.0°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T15:07:21.058292,Alface,Germinacao,16636.67,22.9,59.8,,99.32,True,22.9°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (99.32% > 70%)
+2025-09-07T15:07:51.400563,Alface,Germinacao,16860.0,22.8,60.5,,98.92,True,22.8°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (98.92% > 70%)
+2025-09-07T15:08:21.748734,Alface,Germinacao,16875.83,,,,98.54,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (98.54% > 70%)
+2025-09-07T15:08:52.101767,Alface,Germinacao,16772.5,,,,96.16,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.16% > 70%)
+2025-09-07T15:09:22.520315,Alface,Germinacao,16638.33,,,,96.67,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.67% > 70%)
+2025-09-07T15:09:52.855713,Alface,Germinacao,16400.83,22.5,62.0,,95.51,True,22.5°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (95.51% > 70%)
+2025-09-07T15:10:24.861523,Alface,Germinacao,16400.83,22.5,62.0,,95.51,True,22.5°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (95.51% > 70%)
+2025-09-07T15:10:55.180240,Alface,Germinacao,5.0,22.7,61.9,,100,True,22.7°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T15:11:25.556069,Alface,Germinacao,0.0,22.7,61.8,,100,True,22.7°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T15:11:56.121385,Alface,Germinacao,0.0,,,,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T15:12:26.458178,Alface,Crescimento,16565.83,,,,96.63,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.63% > 70%)
+2025-09-07T15:12:56.835012,Alface,Crescimento,16524.17,,,,95.58,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.58% > 60%)
+2025-09-07T15:14:45.213559,Alface,Crescimento,16708.33,,,,96.5,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (96.5% > 60%)
+2025-09-07T15:15:15.565081,Alface,Crescimento,4.17,22.8,62.3,,100,True,22.8°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T15:15:45.910144,Alface,Crescimento,0.0,22.9,62.1,,100,True,22.9°C < desejada (25°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T15:16:16.225706,Alface,Crescimento,0.0,22.8,61.9,,100,False,22.8°C ≥ máxima (22°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T15:16:46.544653,Alface,Crescimento,16773.33,,,,95.53,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.53% > 60%)
+2025-09-07T15:17:16.966170,Alface,Crescimento,16658.33,,,,95.5,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.5% > 60%)
+2025-09-07T15:17:50.007201,Alface,Floracao,16532.5,,,,95.54,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.54% > 60%)
+2025-09-07T15:18:20.315760,Alface,Floracao,6.67,22.8,62.4,,100,False,22.8°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T15:18:50.692426,Alface,Floracao,16573.33,,,,95.58,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (95.58% > 50%)
+2025-09-07T15:19:14.801072,Alface,Floracao,16317.5,,,,95.39,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (95.39% > 50%)
+2025-09-07T15:19:45.097187,Alface,Floracao,7.5,23.1,61.8,,100,False,23.1°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T15:20:03.911500,Alface,Floracao,16549.17,,,,93.87,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (93.87% > 50%)
+2025-09-07T15:20:34.210383,Alface,Floracao,5.83,,,,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T15:21:04.602113,Alface,Floracao,16400.83,,,,94.71,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.71% > 50%)
+2025-09-07T15:21:34.929583,Alface,Floracao,16413.33,,,,94.76,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.76% > 50%)
+2025-09-07T15:22:05.253664,Alface,Floracao,16199.17,,,,94.77,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (94.77% > 50%)
+2025-09-07T15:22:35.527411,Alface,Floracao,16295.83,,,,93.41,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (93.41% > 50%)
+2025-09-07T15:23:05.804804,Alface,Colheita,16360.0,,,,93.55,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (93.55% > 50%)
+2025-09-07T15:23:36.088786,Alface,Colheita,16486.67,,,,94.49,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:24:06.385557,Alface,Colheita,0.0,23.9,59.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:24:36.660661,Alface,Colheita,0.0,23.9,58.7,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:25:07.159248,Alface,Colheita,0.0,23.8,58.7,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:25:37.443524,Alface,Colheita,0.0,23.6,58.8,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:26:07.696574,Alface,Colheita,0.0,23.5,59.1,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:26:37.985703,Alface,Colheita,0.0,23.4,59.3,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:27:08.259065,Alface,Colheita,0.0,23.2,59.7,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:27:38.519584,Alface,Colheita,0.0,23.1,60.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:28:08.813772,Alface,Colheita,0.0,23.0,60.4,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:28:39.126121,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:29:09.392284,Alface,Colheita,0.0,22.7,61.3,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T15:29:39.639549,Standby,Standby,0.0,22.4,62.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T15:30:09.910693,Standby,Standby,0.0,22.4,62.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T15:30:17.236240,Standby,Standby,0.0,22.4,62.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T15:30:47.553119,Alface,Germinacao,0.0,22.2,63.0,,100,False,22.2°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T15:31:17.875792,Alface,Germinacao,17173.33,,,,99.27,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (99.27% > 70%)
+2025-09-07T15:31:48.157503,Alface,Germinacao,16988.33,,,,98.68,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (98.68% > 70%)
+2025-09-07T15:32:18.488224,Alface,Germinacao,16841.67,,,,97.95,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (97.95% > 70%)
+2025-09-07T15:32:48.825761,Alface,Germinacao,16743.33,,,,97.28,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (97.28% > 70%)
+2025-09-07T15:33:19.134085,Alface,Germinacao,16521.67,,,,96.85,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.85% > 70%)
+2025-09-07T15:33:49.448056,Alface,Germinacao,16799.17,,,,96.3,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.3% > 70%)
+2025-09-07T15:34:22.009947,Alface,Germinacao,16712.5,,,,96.25,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.25% > 70%)
+2025-09-07T15:34:52.321520,Alface,Germinacao,8.33,22.8,62.5,,100,False,22.8°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T15:35:22.683851,Alface,Germinacao,16357.5,22.9,62.3,,96.21,False,22.9°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.21% > 70%)
+2025-09-07T15:35:28.765113,Alface,Germinacao,16357.5,22.9,62.3,,96.21,False,22.9°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (96.21% > 70%)
+2025-09-07T15:35:59.050990,Alface,Germinacao,5.83,,,,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T15:36:29.351137,Alface,Crescimento,16386.67,,,,95.13,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (95.13% > 70%)
+2025-09-07T15:36:59.675311,Alface,Crescimento,16272.5,,,,94.85,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.85% > 60%)
+2025-09-07T15:37:25.341125,Alface,Crescimento,16236.67,,,,95.63,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (95.63% > 60%)
+2025-09-07T15:37:55.625227,Alface,Crescimento,7.5,23.6,60.5,,100,False,23.6°C ≥ máxima (22°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T15:38:25.913737,Alface,Crescimento,16343.33,,,,94.43,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.43% > 60%)
+2025-09-07T15:38:56.221591,Alface,Germinacao,0.0,23.6,59.7,,100,False,23.6°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T15:39:26.544158,Alface,Germinacao,16428.33,,,,95.18,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (95.18% > 70%)
+2025-09-07T15:39:56.842372,Alface,Germinacao,16475.83,,,,95.1,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (95.1% > 70%)
+2025-09-07T15:40:27.157739,Alface,Germinacao,16556.67,,,,94.34,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (94.34% > 70%)
+2025-09-07T15:40:57.433868,Alface,Germinacao,16491.67,,,,95.47,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (95.47% > 70%)
+2025-09-07T15:41:27.718648,Alface,Germinacao,16493.33,,,,94.77,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (94.77% > 70%)
+2025-09-07T15:41:58.017603,Alface,Germinacao,16383.33,,,,94.28,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (94.28% > 70%)
+2025-09-07T15:42:28.394864,Alface,Germinacao,16272.5,,,,94.64,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (94.64% > 70%)
+2025-09-07T15:42:58.708919,Alface,Germinacao,16314.17,,,,93.62,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (93.62% > 70%)
+2025-09-07T15:43:29.194330,Alface,Germinacao,16433.33,,,,94.48,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (94.48% > 70%)
+2025-09-07T15:43:59.502580,Alface,Crescimento,16433.33,,,,94.48,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (94.48% > 70%)
+2025-09-07T15:44:29.852254,Alface,Crescimento,16145.83,,,,94.22,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (94.22% > 70%)
+2025-09-07T15:49:20.549005,Alface,Crescimento,16145.83,,,,94.22,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (94.22% > 70%)
+2025-09-07T15:49:50.882491,Alface,Floracao,4.17,24.5,57.5,,100,False,24.5°C ≥ máxima (22°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T15:50:21.218269,Alface,Floracao,16411.67,,,,93.14,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (93.14% > 50%)
+2025-09-07T15:50:51.521485,Alface,Germinacao,0.0,24.8,55.7,,100,False,24.8°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T15:51:21.840688,Alface,Germinacao,16332.5,,,,93.09,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (93.09% > 70%)
+2025-09-07T15:51:52.158019,Alface,Germinacao,16168.33,,,,93.63,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (93.63% > 70%)
+2025-09-07T15:52:22.476318,Alface,Germinacao,16196.67,,,,93.62,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (93.62% > 70%)
+2025-09-07T15:52:52.794486,Alface,Germinacao,16303.33,,,,93.45,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (93.45% > 70%)
+2025-09-07T15:53:23.087998,Alface,Germinacao,16170.0,,,,93.82,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (93.82% > 70%)
+2025-09-07T15:53:53.978469,Alface,Germinacao,16320.0,,,,92.94,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (92.94% > 70%)
+2025-09-07T15:54:24.287620,Alface,Germinacao,16037.5,,,,93.4,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (93.4% > 70%)
+2025-09-07T15:54:54.640410,Alface,Germinacao,16271.67,,,,93.18,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (93.18% > 70%)
+2025-09-07T15:55:24.962566,Alface,Germinacao,16275.83,,,,91.18,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (91.18% > 70%)
+2025-09-07T15:55:55.240519,Alface,Crescimento,16289.17,,,,92.72,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (92.72% > 70%)
+2025-09-07T15:56:25.580576,Alface,Crescimento,16257.5,,,,92.92,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (92.92% > 60%)
+2025-09-07T15:56:55.922577,Alface,Crescimento,16273.33,,,,92.57,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (92.57% > 60%)
+2025-09-07T15:57:23.924776,Alface,Crescimento,16273.33,,,,92.57,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (92.57% > 60%)
+2025-09-07T15:57:54.328473,Alface,Crescimento,8.33,25.2,55.2,,100,False,25.2°C ≥ máxima (22°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T15:58:24.649003,Alface,Crescimento,16298.33,,,,94.15,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.15% > 60%)
+2025-09-07T15:58:54.988176,Alface,Crescimento,6743.33,,,,94.15,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.15% > 60%)
+2025-09-07T15:59:25.279197,Alface,Crescimento,12699.17,,,,94.21,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (94.21% > 60%)
+2025-09-07T15:59:55.596994,Alface,Crescimento,17867.5,,,,92.88,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (92.88% > 60%)
+2025-09-07T16:00:16.922963,Alface,Crescimento,18153.33,,,,92.88,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (92.88% > 60%)
+2025-09-07T16:00:47.247362,Alface,Crescimento,12.5,24.8,57.0,,100,False,24.8°C ≥ máxima (22°C),,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T16:01:17.560311,Alface,Floracao,18094.17,,,,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T16:01:47.880320,Alface,Floracao,18197.5,,,,93.33,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (93.33% > 50%)
+2025-09-07T16:02:18.222927,Alface,Floracao,17935.83,,,,93.2,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (93.2% > 50%)
+2025-09-07T16:02:48.518257,Alface,Floracao,17983.33,,,,93.13,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (93.13% > 50%)
+2025-09-07T16:03:18.787287,Standby,Standby,0.0,24.5,57.8,,99.85,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T16:03:49.041057,Standby,Standby,0.0,24.5,57.6,,99.94,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T16:04:56.372595,Standby,Standby,0.0,24.5,57.6,,99.94,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T16:05:26.673310,Standby,Standby,0.0,24.4,57.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:28:14.370427,Standby,Standby,0.0,24.2,58.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:28:44.660308,Standby,Standby,0.0,19.3,75.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:29:14.967210,Standby,Standby,0.0,19.3,75.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:29:45.241735,Standby,Standby,0.0,19.2,75.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:30:15.562559,Standby,Standby,0.0,19.2,75.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:30:45.838412,Standby,Standby,0.0,19.2,75.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:31:16.103752,Standby,Standby,0.0,19.2,75.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:31:46.384505,Standby,Standby,0.0,19.2,75.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:32:16.648102,Standby,Standby,0.0,19.2,75.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:32:46.916035,Standby,Standby,0.0,19.2,75.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:33:17.200992,Standby,Standby,0.0,19.2,75.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:33:47.468413,Standby,Standby,0.0,19.2,75.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:34:17.734390,Standby,Standby,0.0,19.2,75.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:34:48.050817,Standby,Standby,0.0,19.2,75.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:35:18.469172,Standby,Standby,0.0,19.2,75.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:35:48.755128,Standby,Standby,0.0,19.2,75.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:36:19.053537,Standby,Standby,0.0,19.1,75.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:36:49.445324,Standby,Standby,0.0,19.1,75.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:37:19.866334,Standby,Standby,0.0,19.1,75.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:37:50.195729,Standby,Standby,0.0,19.1,75.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:38:20.467046,Standby,Standby,0.0,19.1,76.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:38:50.879688,Standby,Standby,0.0,19.1,76.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:39:21.146910,Standby,Standby,0.0,19.1,76.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:39:51.520209,Standby,Standby,0.0,19.1,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:40:21.795517,Standby,Standby,0.0,19.1,76.1,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:40:52.073164,Standby,Standby,0.0,19.1,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:41:22.337071,Standby,Standby,0.0,19.1,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:41:52.961428,Standby,Standby,0.0,19.1,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:42:23.337286,Standby,Standby,0.0,19.1,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:42:53.605575,Standby,Standby,0.0,19.1,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:43:23.875802,Standby,Standby,0.0,19.1,76.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:43:54.169933,Standby,Standby,0.0,19.1,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:44:24.429969,Standby,Standby,0.0,19.0,76.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:44:54.709608,Standby,Standby,0.0,19.1,76.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:45:25.062510,Standby,Standby,0.0,19.0,76.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:45:55.323411,Standby,Standby,0.0,19.0,76.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:46:25.589757,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:46:55.855219,Standby,Standby,0.0,19.0,76.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:47:26.115764,Standby,Standby,0.0,19.0,76.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:47:56.395798,Standby,Standby,0.0,19.0,76.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:48:26.679351,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:48:56.959013,Standby,Standby,0.0,19.0,76.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:49:27.250092,Standby,Standby,0.0,19.0,76.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:49:57.509099,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:50:28.580285,Standby,Standby,0.0,19.0,76.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:50:58.870751,Standby,Standby,0.0,19.0,76.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:51:29.158540,Standby,Standby,0.0,19.0,76.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:51:59.427862,Standby,Standby,0.0,19.0,77.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:52:29.702892,Standby,Standby,0.0,19.0,77.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:52:59.970323,Standby,Standby,0.0,19.0,77.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:53:30.218158,Standby,Standby,0.0,19.0,77.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:54:00.498879,Standby,Standby,0.0,19.0,77.1,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:54:30.781454,Standby,Standby,0.0,19.0,77.1,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:55:01.061706,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:55:31.349483,Standby,Standby,0.0,19.0,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:56:01.671126,Standby,Standby,0.0,19.0,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:56:31.964402,Standby,Standby,0.0,19.0,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:57:37.276663,Standby,Standby,0.0,19.0,77.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:58:07.578758,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:58:37.859214,Standby,Standby,0.0,19.0,77.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:59:08.162273,Standby,Standby,0.0,19.0,77.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T17:59:32.849257,Standby,Standby,0.0,19.0,77.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T19:26:14.934436,Standby,Standby,0.0,19.0,77.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T19:26:45.289561,Alface,Germinacao,0.0,19.0,77.5,,100,True,19.0°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:27:15.628236,Alface,Germinacao,0.0,18.8,79.9,,100,True,18.8°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:27:45.950432,Alface,Germinacao,0.0,18.8,79.7,,100,True,18.8°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:28:16.264880,Alface,Germinacao,0.0,18.8,79.6,,100,True,18.8°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:28:46.589189,Alface,Germinacao,0.0,18.8,79.6,,100,True,18.8°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:29:16.866182,Alface,Germinacao,0.0,18.9,79.6,,100,True,18.9°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:29:47.219715,Alface,Germinacao,0.0,18.9,79.4,,100,True,18.9°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:30:17.536994,Alface,Germinacao,0.0,19.0,79.3,,100,True,19.0°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:30:47.850736,Alface,Germinacao,0.0,19.0,79.4,,100,True,19.0°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:31:18.172045,Alface,Germinacao,0.0,19.1,79.3,,100,True,19.1°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:31:48.470498,Alface,Crescimento,0.0,19.2,79.2,,100,True,19.2°C < mínima (20°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T19:32:18.779119,Alface,Crescimento,0.0,19.3,78.8,,100,False,19.3°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:32:49.070843,Alface,Crescimento,0.0,19.4,78.5,,100,False,19.4°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:33:19.370689,Alface,Crescimento,0.0,19.5,78.1,,100,False,19.5°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:33:49.659294,Alface,Crescimento,0.0,19.5,77.9,,100,False,19.5°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:34:19.974101,Alface,Crescimento,0.0,19.5,77.9,,100,False,19.5°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:34:50.284892,Alface,Crescimento,0.0,19.5,77.9,,100,False,19.5°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:35:20.568411,Alface,Crescimento,0.0,19.5,77.9,,100,False,19.5°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:35:50.870035,Alface,Crescimento,0.0,19.4,77.8,,100,False,19.4°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:36:21.169184,Alface,Crescimento,0.0,19.5,77.8,,100,False,19.5°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:36:51.459167,Alface,Floracao,0.0,19.4,77.9,,100,False,19.4°C entre 18°C e 22°C,,,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (100% > 60%)
+2025-09-07T19:37:21.763571,Alface,Floracao,0.0,19.5,77.9,,100,True,19.5°C < mínima (21°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T19:40:24.098817,Alface,Floracao,10.0,19.7,77.6,,100,True,19.7°C < mínima (21°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T19:40:54.422092,Alface,Floracao,6.67,20.9,73.3,,100,True,20.9°C < mínima (21°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T19:41:24.766313,Alface,Floracao,19023.33,20.9,73.3,,99.76,True,20.9°C < mínima (21°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (99.76% > 50%)
+2025-09-07T19:41:55.067556,Alface,Floracao,19201.67,21.1,72.8,,99.72,False,21.1°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (99.72% > 50%)
+2025-09-07T19:42:25.360302,Alface,Colheita,18801.67,21.3,72.2,,99.29,False,21.3°C entre 21°C e 27°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (99.29% > 50%)
+2025-09-07T19:42:55.628104,Alface,Colheita,18990.83,21.4,71.9,,99.45,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:43:25.879380,Alface,Colheita,0.0,21.6,71.4,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:43:56.166559,Alface,Colheita,0.0,21.6,71.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:44:26.447656,Alface,Colheita,0.0,21.6,70.7,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:44:56.811394,Alface,Colheita,0.0,21.6,70.6,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:45:27.095414,Alface,Colheita,0.0,21.6,70.5,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:45:57.383444,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:46:27.657877,Alface,Colheita,0.0,21.5,70.6,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:46:57.937488,Alface,Colheita,0.0,21.4,70.7,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:47:28.215761,Alface,Colheita,0.0,21.3,70.8,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:47:58.579157,Alface,Colheita,0.0,21.3,71.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:48:28.885942,Alface,Colheita,0.0,21.2,71.1,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:48:59.195404,Alface,Colheita,0.0,21.1,71.3,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:49:29.475343,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:49:59.746441,Alface,Colheita,0.0,21.0,71.7,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:50:29.995778,Alface,Colheita,0.0,20.9,71.9,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:51:00.282929,Alface,Colheita,0.0,20.9,72.1,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:51:29.661098,Alface,Colheita,0.0,20.8,72.3,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:51:38.274995,Alface,Colheita,0.0,20.8,72.5,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T19:53:45.355910,Standby,Standby,0.0,20.7,72.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T19:55:34.614138,Standby,Standby,0.0,20.7,72.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:03:31.946760,Standby,Standby,0.0,20.5,73.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:04:02.597167,Standby,Standby,0.0,19.9,75.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:04:32.891982,Standby,Standby,0.0,19.9,75.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:05:03.253723,Standby,Standby,0.0,19.8,75.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:05:33.532113,Standby,Standby,0.0,19.8,75.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:06:03.849950,Standby,Standby,0.0,19.8,75.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:06:34.129079,Standby,Standby,0.0,19.8,75.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:07:04.393984,Standby,Standby,0.0,19.7,75.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:07:34.677075,Standby,Standby,0.0,19.7,76.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:08:04.951180,Standby,Standby,0.0,19.7,76.1,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:08:35.227053,Standby,Standby,0.0,19.7,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:09:05.478938,Standby,Standby,0.0,19.7,76.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:09:35.765915,Standby,Standby,0.0,19.6,76.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:10:06.047455,Standby,Standby,0.0,19.6,76.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:10:36.330398,Standby,Standby,0.0,19.6,76.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:11:06.613210,Standby,Standby,0.0,19.6,76.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:11:36.934007,Standby,Standby,0.0,19.6,76.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:12:07.213698,Standby,Standby,0.0,19.6,76.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:12:37.518230,Standby,Standby,0.0,19.6,77.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:13:07.780238,Standby,Standby,0.0,19.5,77.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:13:38.063060,Standby,Standby,0.0,19.5,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:14:08.359587,Standby,Standby,0.0,19.5,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:14:38.625728,Standby,Standby,0.0,19.5,77.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:15:08.936820,Standby,Standby,0.0,19.5,77.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:15:39.194591,Standby,Standby,0.0,19.5,77.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:16:09.476574,Standby,Standby,0.0,19.5,77.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:16:39.736697,Standby,Standby,0.0,19.5,77.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:17:10.024149,Standby,Standby,0.0,19.5,77.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:17:40.323676,Standby,Standby,0.0,19.5,77.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:18:10.652554,Standby,Standby,0.0,19.5,77.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:18:40.944061,Standby,Standby,0.0,19.4,78.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:19:11.246444,Standby,Standby,0.0,19.5,78.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:19:41.531720,Standby,Standby,0.0,19.4,78.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:20:11.803241,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:20:42.094230,Standby,Standby,0.0,19.4,78.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:21:12.372297,Standby,Standby,0.0,19.4,78.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:21:42.623944,Standby,Standby,0.0,19.4,78.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:22:12.899798,Standby,Standby,0.0,19.4,78.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:22:43.163348,Standby,Standby,0.0,19.4,78.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:23:13.406862,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:23:43.680537,Standby,Standby,0.0,19.4,79.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:24:13.965417,Standby,Standby,0.0,19.4,79.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:24:44.242159,Standby,Standby,0.0,19.3,79.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:25:14.525762,Standby,Standby,0.0,19.3,79.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:25:44.776873,Standby,Standby,0.0,19.3,79.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:26:15.097048,Standby,Standby,0.0,19.3,79.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:26:45.361690,Standby,Standby,0.0,19.3,79.4,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:27:15.730855,Standby,Standby,0.0,19.3,79.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:27:46.020063,Standby,Standby,0.0,19.3,79.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:28:16.319672,Standby,Standby,0.0,19.3,79.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:28:46.581219,Standby,Standby,0.0,19.3,79.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:29:16.869280,Standby,Standby,0.0,19.3,79.7,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:29:47.157100,Standby,Standby,0.0,19.2,79.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:29:54.181063,Standby,Standby,0.0,19.2,79.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:30:24.462054,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:30:54.758892,Standby,Standby,0.0,19.3,79.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:31:25.066230,Standby,Standby,0.0,19.2,80.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:31:55.345817,Standby,Standby,0.0,19.2,80.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:32:25.595144,Standby,Standby,0.0,19.2,80.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:32:55.897095,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:33:26.171716,Standby,Standby,0.0,19.2,80.1,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:33:56.476480,Standby,Standby,0.0,19.2,80.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:34:26.749110,Standby,Standby,0.0,19.2,80.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:34:57.011407,Standby,Standby,0.0,19.2,80.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:35:27.332343,Standby,Standby,0.0,19.2,80.1,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:35:57.594594,Standby,Standby,0.0,19.2,80.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:36:27.858883,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:36:58.167884,Standby,Standby,0.0,19.2,80.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:37:28.452582,Standby,Standby,0.0,19.2,80.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:37:58.735650,Standby,Standby,0.0,19.2,80.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:38:29.003929,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:38:59.284988,Standby,Standby,0.0,19.2,80.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:39:29.601538,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:39:59.900223,Standby,Standby,0.0,19.2,80.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:40:30.156992,Standby,Standby,0.0,19.1,80.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:41:47.316533,Standby,Standby,0.0,19.1,80.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:42:17.615992,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:42:47.911943,Standby,Standby,0.0,19.1,80.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:43:18.201306,Standby,Standby,0.0,19.1,80.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:43:48.471862,Standby,Standby,0.0,19.1,80.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:45:13.111477,Standby,Standby,0.0,19.1,80.5,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:45:46.707435,Standby,Standby,0.0,19.1,80.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:47:17.953345,Standby,Standby,0.0,19.1,80.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:51:57.172538,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:52:36.700592,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T20:53:06.835859,Standby,Standby,0.0,19.1,80.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:02:42.902583,Standby,Standby,0.0,19.0,80.8,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:03:13.195015,Standby,Standby,0.0,,,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:03:43.618771,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:04:13.885992,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:04:44.352634,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:05:14.932689,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:05:45.214558,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:05:59.168431,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:06:29.576797,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:06:59.856793,Standby,Standby,0.0,18.9,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:07:30.264048,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:08:00.539648,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:08:30.946510,Standby,Standby,0.0,18.9,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:09:01.242925,Standby,Standby,0.0,19.0,81.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:09:31.508136,Standby,Standby,0.0,19.0,81.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:10:01.899545,Standby,Standby,0.0,19.0,80.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:10:32.247929,Standby,Standby,0.0,19.0,81.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:11:02.515507,Standby,Standby,0.0,19.0,81.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:11:32.890170,Standby,Standby,0.0,18.9,81.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:12:03.143519,Standby,Standby,0.0,18.9,81.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:12:33.395273,Standby,Standby,0.0,19.0,81.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:13:05.233612,Standby,Standby,0.0,18.9,81.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:13:35.728488,Alface,Germinacao,0.0,,,,100,False,Temperatura inválida,,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T21:14:06.049957,Alface,Germinacao,0.0,18.9,80.9,,100,True,18.9°C < desejada (25°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T21:14:36.396345,Alface,Germinacao,0.0,18.9,81.0,,100,True,18.9°C < desejada (25°C),,,False,Fora do fotoperíodo (06:00 → 18:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T21:15:06.725401,Alface,Germinacao,0.0,18.9,80.6,,100,True,18.9°C < desejada (25°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T21:15:37.084009,Alface,Germinacao,19655.83,18.9,80.5,,99.97,True,18.9°C < desejada (25°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (99.97% > 70%)
+2025-09-07T21:16:07.413658,Alface,Germinacao,19238.33,19.0,80.2,,100,True,19.0°C < desejada (25°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Override: Umidade adequada (100%)
+2025-09-07T21:16:37.959317,Alface,Germinacao,19075.0,19.2,79.7,,100,True,19.2°C < desejada (25°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Override: Umidade adequada (100%)
+2025-09-07T21:17:08.248481,Alface,Germinacao,19018.33,19.4,79.0,,99.73,True,19.4°C < mínima (20°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (99.73% > 70%)
+2025-09-07T21:17:38.523737,Alface,Colheita,19268.33,19.9,77.6,,99.62,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:18:08.806423,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:18:39.090521,Alface,Colheita,0.0,20.0,76.8,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:19:09.358575,Alface,Colheita,0.0,20.0,76.4,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:19:39.880491,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:20:10.127204,Alface,Colheita,0.0,20.1,76.1,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:20:40.381041,Alface,Colheita,0.0,20.1,76.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:21:10.652869,Alface,Colheita,0.0,20.1,76.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:21:41.150522,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:22:11.412144,Alface,Colheita,0.0,20.0,75.9,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:22:41.665676,Alface,Colheita,0.0,20.0,75.9,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:23:11.941883,Alface,Colheita,0.0,20.0,75.9,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:23:42.043392,Alface,Colheita,0.0,20.0,75.9,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:24:28.728119,Alface,Colheita,0.0,20.0,76.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:27:41.074816,Alface,Colheita,0.0,19.9,76.1,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:28:11.379744,Alface,Colheita,0.0,19.9,76.3,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:28:41.654476,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:29:11.951408,Alface,Colheita,0.0,19.7,76.9,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:29:42.231429,Alface,Colheita,0.0,19.7,77.0,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:30:12.514820,Alface,Colheita,0.0,19.7,77.1,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:30:42.931557,Alface,Colheita,0.0,19.7,77.1,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:31:13.275867,Alface,Colheita,0.0,19.6,77.1,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:31:43.676389,Alface,Colheita,0.0,19.6,77.2,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:32:13.948595,Alface,Colheita,0.0,19.6,77.3,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:32:44.226449,Alface,Colheita,0.0,19.6,77.4,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:33:14.516325,Alface,Colheita,0.0,19.6,77.5,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:37:51.689855,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:39:16.859981,Alface,Colheita,0.0,19.5,77.6,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:39:47.143108,Alface,Colheita,0.0,19.4,78.2,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:40:17.422688,Alface,Colheita,0.0,19.4,78.3,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:40:47.693894,Alface,Colheita,0.0,19.4,78.3,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:41:17.976835,Alface,Colheita,0.0,19.4,78.4,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:41:48.263185,Alface,Colheita,0.0,19.4,78.5,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:42:18.554893,Alface,Colheita,0.0,,,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:42:49.866192,Alface,Colheita,0.0,19.3,78.6,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:43:04.187121,Alface,Colheita,0.0,19.3,78.6,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:43:22.079757,Alface,Colheita,0.0,19.3,78.6,,100,False,Fase Colheita,,,False,Fase Colheita,False,Fase Colheita
+2025-09-07T21:44:05.183394,Alface,Germinacao,0.0,19.3,78.6,,100,True,19.3°C < mínima (20°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T21:44:35.481917,Alface,Germinacao,0.0,19.3,78.7,,100,True,19.3°C < mínima (20°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T21:46:06.928070,Alface,Germinacao,19254.17,19.3,78.8,,99.76,True,19.3°C < mínima (20°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (99.76% > 70%)
+2025-09-07T21:46:45.163047,Alface,Germinacao,,,,,,False,Encerrado manualmente,,,False,Encerrado manualmente,False,Encerrado manualmente
+2025-09-07T21:47:15.429295,Standby,Standby,5823.33,19.6,78.3,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:47:45.722260,Standby,Standby,0.0,19.6,78.1,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:48:16.012375,Standby,Standby,0.0,19.6,78.0,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:48:46.266841,Standby,Standby,0.0,19.6,77.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:49:16.548630,Standby,Standby,0.0,19.7,77.9,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:49:48.596529,Standby,Standby,,,,,,False,Encerrado manualmente,,,False,Encerrado manualmente,False,Encerrado manualmente
+2025-09-07T21:50:05.852662,Alface,Germinacao,,,,,,False,Encerrado manualmente,,,False,Encerrado manualmente,False,Encerrado manualmente
+2025-09-07T21:51:28.502036,Alface,Germinacao,,,,,,False,Encerrado manualmente,,,False,Encerrado manualmente,False,Encerrado manualmente
+2025-09-07T21:53:40.414327,Alface,Germinacao,0.0,19.7,78.0,,100,True,19.7°C < mínima (20°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T21:54:10.724791,Alface,Floracao,0.0,,,,100,False,Temperatura inválida,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (100% > 50%)
+2025-09-07T21:54:41.050153,Alface,Floracao,19107.5,19.8,77.6,,99.84,True,19.8°C < mínima (21°C),,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 04:00),False,Solo muito úmido (99.84% > 50%)
+2025-09-07T21:55:11.397912,Alface,Germinacao,0.0,20.0,77.0,,100,False,20.0°C entre 20°C e 25°C,,,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (100% > 70%)
+2025-09-07T21:55:41.686602,Standby,Standby,0.0,20.1,76.6,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:56:11.934755,Standby,Standby,0.0,20.2,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby
+2025-09-07T21:56:42.253961,Standby,Standby,0.0,20.2,76.2,,100,False,Estufa em Standby,,,False,Estufa em Standby,False,Estufa em Standby

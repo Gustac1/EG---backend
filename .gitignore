@@ -1,3 +1,2 @@
-
-EG - backend/config/credentials/*.json
-credentials/*.json
+# Ignora todas as credenciais
+config/credentials/*.json

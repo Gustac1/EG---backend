@@ -1,2 +1,14 @@
 # Ignora todas as credenciais
 config/credentials/*.json
+
+
+# Ambiente virtual
+venv/
+ENV/
+.env/
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+

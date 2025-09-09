@@ -63,7 +63,7 @@ def ciclo_estufa(
     while True:
         try:
             # 1. Limpa tela e carrega configuração atual
-            limpar_terminal()
+            # limpar_terminal()
             config = carregar_configuracao_local(estufa_id)
 
             # 2. Coleta sensores

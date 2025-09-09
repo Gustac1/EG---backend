@@ -74,7 +74,7 @@ def teste_logger():
             )
             atuadores = {
                 "Aquecedor": (None, None),
-                "Ventilacao": (None, None),
+                "Ventoinha": (None, None),
                 "Luminaria": (None, None),
                 "Bomba": (None, None),
             }
@@ -99,8 +99,8 @@ def teste_logger():
                         sensores["UmidadeDoSoloAtual"],
                         atuadores["Aquecedor"][0],
                         atuadores["Aquecedor"][1],
-                        atuadores["Ventilacao"][0],
-                        atuadores["Ventilacao"][1],
+                        atuadores["Ventoinha"][0],
+                        atuadores["Ventoinha"][1],
                         atuadores["Luminaria"][0],
                         atuadores["Luminaria"][1],
                         atuadores["Bomba"][0],

@@ -1,14 +1,12 @@
 # config/firebase_config.py
-import os
+
 import firebase_admin
 from firebase_admin import credentials, firestore, db
 
 # 🔥 Caminho para o arquivo de credenciais
 # Preferencialmente definido pela variável de ambiente FIREBASE_CREDENTIALS
-CREDENCIAIS_PATH = os.getenv("FIREBASE_CREDENTIALS")
-
-if not CREDENCIAIS_PATH:
-    raise RuntimeError("🚫 Variável de ambiente FIREBASE_CREDENTIALS não definida.")
+# 🔥 Caminho fixo para o arquivo de credenciais
+CREDENCIAIS_PATH = "/home/TCCGustavo/Documents/EG - backend/config/credentials/ecogrowth-772d4-firebase-adminsdk-ubo79-eef9fa5c2f.json"
 
 # 🔥 Inicialização do Firebase (somente uma vez por execução)
 if not firebase_admin._apps:

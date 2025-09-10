@@ -1,4 +1,4 @@
-from config.firebase_config import firestore_db
+from config.firebase.client import firestore_db
 from services.ciclo_service import ciclo_reset_event
 from services.fases_service import cancelar_avanco_fase
 

@@ -19,8 +19,8 @@ import threading
 from datetime import datetime, timezone, timedelta
 from dateutil.parser import isoparse
 
-from config.firebase_config import firestore_db
-from config.configuracao_local import carregar_preset, carregar_configuracao_local
+from config.firebase.client import firestore_db
+from config.local.loader import carregar_configuracao_local, carregar_preset
 
 
 # Timer global para avanço automático
@@ -97,7 +97,7 @@ def agendar_avanco_fase(estufa_id: str) -> None:
         - Se avançar, reseta ciclo e agenda próximo avanço
         """
         from services.ciclo_service import ciclo_reset_event, verificar_e_avancar_fase
-        from config.configuracao_local import carregar_configuracao_local
+        from config.local.loader import carregar_configuracao_local
 
         config_local = carregar_configuracao_local(estufa_id)
         nova = verificar_e_avancar_fase(estufa_id, config_local)

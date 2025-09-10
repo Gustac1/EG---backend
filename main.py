@@ -35,7 +35,8 @@ from modules.atuadores.ventoinha import Ventoinha
 # ===============================
 # Configuração
 # ===============================
-from config.configuracao_local import carregar_configuracao_local
+
+from config.local.loader import carregar_configuracao_local
 
 # ===============================
 # Services

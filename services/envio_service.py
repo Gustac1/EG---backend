@@ -1,6 +1,6 @@
 # services/envio_service.py
 import time
-from config.firebase_config import enviar_dados_firestore
+from config.firebase.firestore_utils import enviar_dados_firestore
 from services.coleta_service import buffer_sensores  # reaproveita o mesmo buffer
 
 

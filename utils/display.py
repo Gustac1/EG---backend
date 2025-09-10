@@ -1,7 +1,7 @@
 # Utils/display.py
 import os
 from datetime import datetime, timezone
-from config.configuracao_local import carregar_preset
+from config.local.loader import carregar_preset
 from dateutil.parser import isoparse
 
 

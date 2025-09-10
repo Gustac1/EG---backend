@@ -5,8 +5,9 @@ from services.controle_service import controlar_atuadores
 from services.envio_service import enviar_dados_periodicamente
 from services.fases_service import verificar_e_avancar_fase
 from services.coleta_service import coletar_dados
-from config.firebase_config import enviar_dados_realtime, atualizar_status_atuador
-from config.configuracao_local import carregar_configuracao_local
+from config.firebase.realtime_utils import enviar_dados_realtime
+from config.firebase.firestore_utils import atualizar_status_atuador
+from config.local.loader import carregar_configuracao_local
 from utils.display import (
     exibir_bloco_sensores,
     exibir_status_atuadores,

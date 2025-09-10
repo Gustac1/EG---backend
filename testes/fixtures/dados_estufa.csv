@@ -284,3 +284,11 @@ timestamp,planta,fase,luminosidade,temp_ar,umid_ar,temp_solo,umid_solo,aquecedor
 2025-09-10T00:06:46.448392,Standby,Standby,0.0,25.0,64.9,24.38,90.45,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
 2025-09-10T00:07:16.714902,Standby,Standby,0.0,25.0,64.7,24.25,90.44,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
 2025-09-10T18:18:36.104992,Standby,Standby,0.0,25.0,64.7,24.25,90.44,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T19:38:04.625132,Standby,Standby,0.0,21.9,66.5,21.31,91.26,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T19:38:34.948702,Standby,Standby,0.0,,,20.81,91.37,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T19:45:52.037118,Standby,Standby,0.0,21.1,70.8,20.81,91.35,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T19:51:55.499312,Standby,Standby,0.0,21.1,70.8,20.69,91.28,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:02:47.727933,Standby,Standby,0.0,21.0,70.7,20.5,90.93,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:03:17.990360,Standby,Standby,19948.33,21.0,72.0,20.44,90.55,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:07:41.840046,Standby,Standby,19948.33,21.0,72.0,20.44,90.55,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:08:12.155393,Standby,Standby,0.0,21.0,71.9,20.44,91.4,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby

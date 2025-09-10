@@ -1,6 +1,6 @@
-from config.firebase_config import firestore_db
+from config.firebase.client import firestore_db
 from google.cloud import firestore
-from config.configuracao_local import carregar_preset
+from config.local.loader import carregar_preset
 from services.ciclo_service import ciclo_reset_event
 from services.fases_service import agendar_avanco_fase
 

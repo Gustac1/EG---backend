@@ -1,8 +1,8 @@
-from config.firebase_config import firestore_db
+from config.firebase.client import firestore_db
 from services.ciclo_service import ciclo_reset_event
 from google.cloud import firestore
 from services.fases_service import proxima_fase, agendar_avanco_fase
-from config.configuracao_local import carregar_configuracao_local
+from config.local.loader import carregar_configuracao_local
 
 
 def avancar_fase_forcado(estufa_id: str) -> None:

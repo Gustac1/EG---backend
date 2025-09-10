@@ -3,8 +3,8 @@ import time
 import csv
 import os
 from datetime import datetime
-from config.configuracao_local import carregar_configuracao_local
-from config.firebase_config import realtime_db, firestore_db
+from config.local.loader import carregar_configuracao_local
+from config.firebase.client import firestore_db, realtime_db
 
 BASE_DIR = os.path.dirname(__file__)
 CSV_FILE = os.path.join(BASE_DIR, "fixtures", "dados_estufa.csv")

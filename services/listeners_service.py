@@ -1,6 +1,6 @@
 # services/listeners_service.py
 from google.cloud import firestore
-from config.firebase_config import firestore_db
+from config.firebase.client import firestore_db
 from services.acoes.iniciar import iniciar_estufa
 from services.acoes.reiniciar import reiniciar_estufa
 from services.acoes.avancar import avancar_fase_forcado

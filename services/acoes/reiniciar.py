@@ -1,37 +1,36 @@
 from config.firebase_config import firestore_db
 from services.ciclo_service import ciclo_reset_event
+from services.fases_service import cancelar_avanco_fase
 
 
-def reiniciar_estufa(estufa_id):
+def reiniciar_estufa(estufa_id: str) -> None:
     """
     Reinicia a estufa, retornando para o estado "Standby".
 
-    Esse método é chamado quando o usuário solicita um reinício da estufa
-    (via listener no Firestore). Ele não desliga os atuadores diretamente:
-    em vez disso, marca a estufa como "Standby" no Firestore e reseta o ciclo.
-    Na próxima rodada (imediata, devido ao reset), o ciclo principal irá:
-      - Detectar que a fase/estado está em Standby.
-      - Desligar todos os atuadores de forma centralizada pela lógica
-        do `controlar_atuadores`.
+    Este método é chamado quando o usuário solicita um reinício via listener.
+    Ele não desliga os atuadores diretamente: apenas marca o estado como
+    Standby no Firestore e dispara o reset do ciclo principal. Na rodada
+    seguinte, o ciclo detecta Standby e desliga todos os atuadores.
 
     Fluxo:
-        1. Atualiza o Firestore com os valores padrão de reinício:
+        1. Atualiza o documento principal no Firestore:
             - PlantaAtual = "Standby"
             - FaseAtual = "Standby"
             - InicioFaseTimestamp = None
             - EstadoSistema = False
             - ForcarAvancoFase = False
-        2. Dispara o evento `ciclo_reset_event` para que o ciclo principal rode imediatamente.
-        3. O ciclo, ao rodar, identifica Standby e desliga todos os atuadores.
-        4. Exibe mensagem de confirmação no terminal.
+        2. Cancela qualquer avanço automático previamente agendado.
+        3. Dispara o evento `ciclo_reset_event` para rodar o ciclo imediatamente.
+        4. O ciclo, ao rodar, identifica Standby e desliga todos os atuadores.
+        5. Exibe mensagem de confirmação no terminal.
 
     Parâmetros:
-        estufa_id (str): Identificador único da estufa.
+        estufa_id (str): Identificador único da estufa (ex.: "EG001").
 
     Retorna:
         None
     """
-    # 1. Atualiza Firestore
+    # 1. Atualiza Firestore com estado de standby
     firestore_db.collection("Dispositivos").document(estufa_id).update(
         {
             "PlantaAtual": "Standby",
@@ -42,8 +41,11 @@ def reiniciar_estufa(estufa_id):
         }
     )
 
-    # 2. Reseta ciclo → força o ciclo a rodar imediatamente
+    # 2. Cancela avanço automático pendente
+    cancelar_avanco_fase()
+
+    # 3. Reseta ciclo → força execução imediata
     ciclo_reset_event.set()
 
-    # 3. Log
+    # 4. Log de confirmação
     print(f"♻️ Estufa {estufa_id} reiniciada e colocada em Standby.")

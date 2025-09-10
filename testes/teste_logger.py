@@ -54,7 +54,7 @@ def teste_logger():
             snapshot = realtime_db.child(f"Dispositivos/{ESTUFA_ID}/DadosAtuais").get()
             if not snapshot:
                 print("⚠️ Nenhum dado encontrado no Realtime DB.")
-                time.sleep(30)
+                time.sleep(10)
                 continue
 
             sensores = {

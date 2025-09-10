@@ -292,3 +292,65 @@ timestamp,planta,fase,luminosidade,temp_ar,umid_ar,temp_solo,umid_solo,aquecedor
 2025-09-10T20:03:17.990360,Standby,Standby,19948.33,21.0,72.0,20.44,90.55,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
 2025-09-10T20:07:41.840046,Standby,Standby,19948.33,21.0,72.0,20.44,90.55,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
 2025-09-10T20:08:12.155393,Standby,Standby,0.0,21.0,71.9,20.44,91.4,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:20:34.192823,Standby,Standby,0.0,21.0,71.8,20.44,91.22,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:21:04.545323,Alface,Germinacao,0.0,20.7,71.7,20.19,91.42,False,20.7°C entre 20°C e 25°C,False,Condições normais,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (91.42% > 70%)
+2025-09-10T20:21:34.847028,Standby,Standby,19971.67,20.8,71.8,20.25,90.6,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:22:05.137928,Standby,Standby,0.0,20.8,71.8,20.25,91.08,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:22:35.447972,Standby,Standby,0.0,20.8,72.0,20.31,91.0,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:23:05.755346,Standby,Standby,0.0,20.8,72.1,20.25,91.0,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:23:36.050428,Standby,Standby,0.0,20.8,72.0,20.25,91.39,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:24:06.339115,Standby,Standby,0.0,20.8,71.9,20.25,91.08,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:24:36.652094,Standby,Standby,0.0,20.8,71.8,20.25,91.03,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:25:06.949652,Standby,Standby,0.0,20.8,71.7,20.25,91.05,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:25:37.253489,Standby,Standby,0.0,20.7,71.8,20.25,91.05,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:26:07.554011,Standby,Standby,0.0,20.7,71.8,20.25,91.21,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:26:36.889221,Standby,Standby,0.0,20.7,71.8,20.25,91.21,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:27:07.188009,Standby,Standby,0.0,,,20.25,91.43,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:27:37.534493,Alface,Germinacao,0.0,20.7,72.0,20.19,91.45,False,20.7°C entre 20°C e 25°C,False,Condições normais,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (91.45% > 70%)
+2025-09-10T20:28:07.870366,Alface,Germinacao,19845.0,20.7,72.0,20.38,90.35,False,20.7°C entre 20°C e 25°C,False,Condições normais,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (90.35% > 70%)
+2025-09-10T20:28:38.187794,Alface,Germinacao,19754.17,20.8,72.1,20.62,90.12,False,20.8°C entre 20°C e 25°C,False,Condições normais,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (90.12% > 70%)
+2025-09-10T20:29:08.525459,Alface,Germinacao,19689.17,21.0,72.0,20.81,90.32,False,21.0°C entre 20°C e 25°C,False,Condições normais,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (90.32% > 70%)
+2025-09-10T20:29:38.828561,Standby,Standby,0.0,21.3,71.6,21.06,91.01,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:30:09.105997,Standby,Standby,0.0,21.3,71.2,21.06,90.92,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:30:39.362613,Standby,Standby,0.0,21.4,70.9,21.06,90.76,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:31:09.647478,Standby,Standby,0.0,21.4,70.7,21.06,90.77,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:31:40.000970,Standby,Standby,0.0,21.4,70.7,21.06,90.77,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:32:10.299185,Standby,Standby,0.0,21.4,70.6,21.06,90.79,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:32:40.602052,Standby,Standby,0.0,21.5,70.5,21.0,91.17,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:33:10.925440,Standby,Standby,0.0,21.5,70.5,21.0,91.28,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:33:41.279646,Standby,Standby,0.0,21.4,70.3,20.94,91.16,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:34:11.568725,Standby,Standby,0.0,21.4,70.5,20.88,90.96,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:34:41.879770,Standby,Standby,0.0,21.4,70.6,20.81,91.31,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:35:12.182717,Standby,Standby,0.0,21.3,70.5,20.75,91.02,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:35:42.505527,Standby,Standby,0.0,21.3,70.6,20.75,90.9,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:36:12.787322,Standby,Standby,0.0,21.3,70.8,20.69,91.12,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:36:43.096328,Standby,Standby,0.0,21.3,70.7,20.62,90.92,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:37:13.404216,Standby,Standby,0.0,21.2,70.7,20.56,91.35,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:37:43.732397,Standby,Standby,0.0,21.2,70.9,20.56,91.22,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:38:14.029647,Standby,Standby,0.0,21.2,70.7,20.5,91.12,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:38:44.376621,Standby,Standby,0.0,21.1,70.8,20.5,91.22,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:39:14.676089,Standby,Standby,0.0,21.1,70.9,20.44,91.2,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:39:44.983985,Standby,Standby,0.0,21.1,71.0,20.44,91.0,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:40:15.299127,Standby,Standby,0.0,21.0,71.2,20.44,91.02,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:40:45.608400,Standby,Standby,0.0,21.0,71.4,20.38,91.4,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:41:15.910267,Standby,Standby,0.0,21.0,71.6,20.38,90.95,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:41:46.166062,Standby,Standby,0.0,,,20.31,91.39,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:42:16.447610,Standby,Standby,0.0,20.9,71.4,20.31,90.95,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:42:46.715064,Standby,Standby,0.0,20.9,71.7,20.25,91.29,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:43:17.011025,Standby,Standby,0.0,20.9,71.7,20.25,91.29,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:43:47.296154,Standby,Standby,0.0,20.9,71.7,20.25,91.01,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:44:17.587333,Standby,Standby,0.0,20.9,71.5,20.19,90.95,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:44:47.899804,Standby,Standby,0.0,20.8,71.7,20.19,91.29,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:45:18.202992,Standby,Standby,0.0,20.8,71.7,20.19,91.34,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:45:48.528136,Standby,Standby,0.0,20.8,71.7,20.19,91.12,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:46:18.806984,Standby,Standby,0.0,20.7,71.7,20.19,91.16,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:46:49.096220,Standby,Standby,0.0,,,20.19,90.94,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:47:19.387626,Standby,Standby,0.0,20.7,71.8,20.19,91.0,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:47:49.729017,Standby,Standby,0.0,20.6,72.1,20.12,91.34,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:48:00.474728,Standby,Standby,0.0,20.6,72.1,20.12,91.34,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:48:30.773115,Standby,Standby,0.0,20.6,72.2,20.12,91.42,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby,False,Estufa em Standby
+2025-09-10T20:49:01.101509,Alface,Germinacao,0.0,20.6,72.2,20.12,91.42,False,20.6°C entre 20°C e 25°C,False,Condições normais,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (91.42% > 70%)
+2025-09-10T20:49:31.443052,Alface,Germinacao,20258.33,20.6,72.3,20.31,90.46,False,20.6°C entre 20°C e 25°C,False,Condições normais,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (90.46% > 70%)
+2025-09-10T20:50:01.769951,Alface,Germinacao,19982.5,,,20.5,90.13,False,Temperatura inválida,False,Leitura inválida de sensores,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (90.13% > 70%)
+2025-09-10T20:50:32.095117,Alface,Germinacao,19641.67,,,20.69,90.23,False,Temperatura inválida,False,Leitura inválida de sensores,True,Dentro do fotoperíodo cruzando a meia-noite (06:00 → 05:00),False,Solo muito úmido (90.23% > 70%)
+2025-09-10T20:51:02.402661,Alface,Crescimento,19939.17,20.9,71.6,20.88,89.89,False,20.9°C entre 18°C e 22°C,False,Condições normais,False,Fora do fotoperíodo (06:00 → 17:00),False,Solo muito úmido (89.89% > 60%)

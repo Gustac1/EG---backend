@@ -8,6 +8,7 @@ from services.coleta_service import coletar_dados
 from config.firebase.realtime_utils import enviar_dados_realtime
 from config.firebase.firestore_utils import atualizar_status_atuador
 from config.local.loader import carregar_configuracao_local
+from utils.eventos import ciclo_reset_event
 from utils.display import (
     exibir_bloco_sensores,
     exibir_status_atuadores,
@@ -16,7 +17,6 @@ from utils.display import (
 )
 
 # Evento global usado para resetar o ciclo de forma imediata
-ciclo_reset_event = threading.Event()
 
 
 def ciclo_estufa(

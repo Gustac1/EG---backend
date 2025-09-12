@@ -1,8 +1,7 @@
-# services/ciclo_service.py
 import time
 import threading
 from services.controle_service import controlar_atuadores
-from services.envio_service import enviar_dados_periodicamente
+from services.envio_service import iniciar_envio_periodico, parar_envio_periodico
 from services.fases_service import verificar_e_avancar_fase
 from services.coleta_service import coletar_dados
 from config.firebase.realtime_utils import enviar_dados_realtime
@@ -12,7 +11,6 @@ from utils.eventos import ciclo_reset_event
 from utils.display import (
     exibir_bloco_sensores,
     exibir_status_atuadores,
-    exibir_dados_periodicos,
     exibir_status_fase,
 )
 
@@ -34,7 +32,7 @@ def ciclo_estufa(
     """
     Executa o ciclo principal da estufa.
 
-    Nova ordem:
+    Fluxo:
       1. Carrega configuração ativa da estufa.
       2. Verifica avanço de fase automático e recarrega config se necessário.
       3. Coleta leituras dos sensores.
@@ -42,65 +40,73 @@ def ciclo_estufa(
       5. Atualiza status dos atuadores no Firestore.
       6. Envia dados atuais para o Realtime Database.
       7. Exibe status de sensores, atuadores e fase no terminal.
-      8. Calcula e envia médias periódicas para o Firestore.
+      8. Envio periódico de médias → feito em scheduler (independente do ciclo).
       9. Aguarda até o próximo ciclo (ou reseta imediatamente se solicitado).
     """
-    while True:
-        try:
-            # 1. Carrega config
-            config = carregar_configuracao_local(estufa_id)
 
-            # 2. Verifica avanço de fase antes do controle
-            nova_fase = verificar_e_avancar_fase(estufa_id, config)
-            if nova_fase:
-                print(f"⏩ Estufa {estufa_id} avançou para a fase {nova_fase}")
-                # recarrega config já com a nova fase
+    # 🔄 Inicia o scheduler de envio periódico (independente do ciclo principal)
+    iniciar_envio_periodico(estufa_id)
+
+    try:
+        while True:
+            try:
+                # 1. Carrega configuração ativa
                 config = carregar_configuracao_local(estufa_id)
 
-            # 3. Coleta sensores
-            dados = coletar_dados(
-                luminosidade_sensor,
-                temperatura_solo_sensor,
-                temperatura_ar_sensor,
-                umidade_solo_sensor,
-            )
+                # 2. Verifica avanço de fase antes do controle
+                nova_fase = verificar_e_avancar_fase(estufa_id, config)
+                if nova_fase:
+                    print(f"⏩ Estufa {estufa_id} avançou para a fase {nova_fase}")
+                    # recarrega config já com a nova fase
+                    config = carregar_configuracao_local(estufa_id)
 
-            # 4. Controle dos atuadores
-            status_atuadores = controlar_atuadores(
-                ventoinha,
-                luminaria,
-                bomba,
-                aquecedor,
-                dados.get("TemperaturaDoArAtual") if dados else None,
-                dados.get("UmidadeDoArAtual") if dados else None,
-                dados.get("UmidadeDoSoloAtual") if dados else None,
-                config,
-            )
-            if status_atuadores:
-                for nome, (ativo, motivo) in status_atuadores.items():
-                    atualizar_status_atuador(estufa_id, nome, ativo, motivo)
+                # 3. Coleta sensores
+                dados = coletar_dados(
+                    luminosidade_sensor,
+                    temperatura_solo_sensor,
+                    temperatura_ar_sensor,
+                    umidade_solo_sensor,
+                )
 
-            # 5. Envio dos dados atuais para o Realtime DB
-            if dados:
-                enviar_dados_realtime(estufa_id, dados)
+                # 4. Controle dos atuadores
+                status_atuadores = controlar_atuadores(
+                    ventoinha,
+                    luminaria,
+                    bomba,
+                    aquecedor,
+                    dados.get("TemperaturaDoArAtual") if dados else None,
+                    dados.get("UmidadeDoArAtual") if dados else None,
+                    dados.get("UmidadeDoSoloAtual") if dados else None,
+                    config,
+                )
+                if status_atuadores:
+                    for nome, (ativo, motivo) in status_atuadores.items():
+                        atualizar_status_atuador(estufa_id, nome, ativo, motivo)
 
-            # 6. Exibição no terminal
-            exibir_status_fase(config)
-            exibir_status_atuadores(status_atuadores)
-            if dados:
-                exibir_bloco_sensores(dados)
+                # 5. Envio dos dados atuais para o Realtime Database
+                if dados:
+                    enviar_dados_realtime(estufa_id, dados)
 
-            # 7. Envio periódico de médias
-            enviar_dados_periodicamente(estufa_id, exibir_dados_periodicos)
+                # 6. Exibição no terminal
+                exibir_status_fase(config)
+                exibir_status_atuadores(status_atuadores)
+                if dados:
+                    exibir_bloco_sensores(dados)
 
-            # 8. Conclusão
-            print(f"✅ Ciclo da estufa concluído às {time.strftime('%H:%M:%S')}")
+                # 7. ✅ Envio periódico de médias agora é feito no scheduler
 
-        except Exception as e:
-            print(f"⚠️ Erro no ciclo_estufa: {e}")
+                # 8. Conclusão
+                print(f"✅ Ciclo da estufa concluído às {time.strftime('%H:%M:%S')}")
 
-        # 9. Intervalo até o próximo ciclo (com suporte a reset imediato)
-        print(f"⏳ Aguardando próximo ciclo ({tempo_ciclo}s)...\n")
-        if ciclo_reset_event.wait(timeout=tempo_ciclo):
-            print("🔄 Ciclo resetado por listener!")
-            ciclo_reset_event.clear()
+            except Exception as e:
+                print(f"⚠️ Erro no ciclo_estufa: {e}")
+
+            # 9. Intervalo até o próximo ciclo (com suporte a reset imediato)
+            print(f"⏳ Aguardando próximo ciclo ({tempo_ciclo}s)...\n")
+            if ciclo_reset_event.wait(timeout=tempo_ciclo):
+                print("🔄 Ciclo resetado por listener!")
+                ciclo_reset_event.clear()
+
+    finally:
+        # 🔚 Garante que o scheduler será parado se o ciclo encerrar
+        parar_envio_periodico()

@@ -1,0 +1,20 @@
+[0;1;32m●[0m estufa.service - EcoGrowth - Backend da Estufa
+     Loaded: loaded (]8;;file://TCCGustavo/etc/systemd/system/estufa.service/etc/systemd/system/estufa.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Thu 2025-09-11 19:42:28 -03; 26min ago
+   Main PID: 5112 (python)
+      Tasks: 20[0;38;5;245m (limit: 3921)[0m
+        CPU: 29.652s
+     CGroup: /system.slice/estufa.service
+             ├─[0;38;5;245m5112 /home/TCCGustavo/Documents/venv/bin/python "/home/TCCGustavo/Documents/EG - backend/main.py"[0m
+             └─[0;38;5;245m5139 /home/TCCGustavo/Documents/venv/lib/python3.11/site-packages/adafruit_blinka/microcontroller/bcm283x/pulseio/libgpiod_pulsein64 --pulses 81 --queue 10410 -i gpiochip0 17[0m
+
+Sep 11 20:07:54 TCCGustavo python[5112]: ==================== ⏸️  Fase Atual da Estufa  [20:07:54] ====================
+Sep 11 20:07:54 TCCGustavo python[5112]: 📌 Planta selecionada      : Standby
+Sep 11 20:07:54 TCCGustavo python[5112]: 📖 Fase atual              : Standby
+Sep 11 20:07:54 TCCGustavo python[5112]: ⏹️  Estufa em standby. Nenhum controle ativo.
+Sep 11 20:07:54 TCCGustavo python[5112]: =====================================================================================
+Sep 11 20:07:54 TCCGustavo python[5112]: ==================== 🔧 Status dos Atuadores  [20:07:54] ====================
+Sep 11 20:07:54 TCCGustavo python[5112]: 🔥 Aquecedor       : DESLIGADO  | Estufa em Standby
+Sep 11 20:07:54 TCCGustavo python[5112]: 🌀 Ventoinha       : DESLIGADO  | Estufa em Standby
+Sep 11 20:07:54 TCCGustavo python[5112]: 💡 Luminaria       : DESLIGADO  | Estufa em Standby
+Sep 11 20:07:54 TCCGustavo python[5112]: 💧 Bomba           : DESLIGADO  | Estufa em Standby

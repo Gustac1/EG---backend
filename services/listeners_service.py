@@ -4,6 +4,10 @@ from config.firebase.client import firestore_db
 from services.acoes.iniciar import iniciar_estufa
 from services.acoes.reiniciar import reiniciar_estufa
 from services.acoes.avancar import avancar_fase_forcado
+from services.calibragem_service import (
+    iniciar_calibragem_luminosidade,
+    finalizar_calibragem_luminosidade,
+)
 
 
 def escutar_solicitacao_iniciar(estufa_id):
@@ -123,3 +127,27 @@ def escutar_solicitacao_avancar(estufa_id):
                     print(f"⚠️ Erro ao avançar fase da estufa {estufa_id}: {e}")
 
     doc_ref.on_snapshot(callback)
+
+
+def escutar_solicitacao_calibragem(estufa_id, sensor_luminosidade):
+    """
+    Listener em tempo real no Firestore para ativar/desativar calibragem.
+    """
+    doc_ref = (
+        firestore_db.collection("Dispositivos")
+        .document(estufa_id)
+        .collection("Solicitacoes")
+        .document("Calibragem")
+    )
+
+    def on_snapshot(doc_snapshot, changes, read_time):
+        for doc in doc_snapshot:
+            dados = doc.to_dict() or {}
+            calibragem = dados.get("CalibragemLuminosidade", False)
+
+            if calibragem:
+                iniciar_calibragem_luminosidade(sensor_luminosidade, estufa_id)
+            else:
+                finalizar_calibragem_luminosidade()
+
+    doc_ref.on_snapshot(on_snapshot)

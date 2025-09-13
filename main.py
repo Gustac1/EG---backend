@@ -24,6 +24,7 @@ from modules.sensores.temperatura_ar_umidade_ar import DHT22
 from modules.sensores.temperatura_solo import DS18B20
 from modules.sensores.umidade_solo import UmidadeSolo
 
+
 # ===============================
 # Atuadores
 # ===============================
@@ -46,6 +47,7 @@ from services.listeners_service import (
     escutar_solicitacao_iniciar,
     escutar_solicitacao_reiniciar,
     escutar_solicitacao_avancar,
+    escutar_solicitacao_calibragem,
 )
 
 # ===============================
@@ -133,6 +135,9 @@ if __name__ == "__main__":
     escutar_solicitacao_iniciar(ESTUFA_ID)
     escutar_solicitacao_reiniciar(ESTUFA_ID)
     escutar_solicitacao_avancar(ESTUFA_ID)
+
+    # 🔥 Listener de calibragem de luminosidade (tempo real)
+    escutar_solicitacao_calibragem(ESTUFA_ID, luminosidade_sensor)
 
     # Mantém processo vivo
     thread_ciclo.join()
